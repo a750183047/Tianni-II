@@ -41,23 +41,23 @@ void speedPID(u32 nowValue)
    float  SpeedKI = speedPid.i ;
    float  SpeedKD = speedPid.d ;
 
-     static int16_t LastSpeedCut0,LastSpeedCut1,LastSpeedCut2 ,SpeedLastPWMK ;
-     int16_t  SpeedPWMKP ,SpeedPWMKI ,SpeedPWMKD,SpeedPWMK ;
-     int16_t  SpeedPWMOUT;
-     int16_t  SpeedDifference0=0;
-     int16_t  speedDEARE1,speedDEARE2,DSpeed ;
+   static int16_t LastSpeedCut0,LastSpeedCut1,LastSpeedCut2 ,SpeedLastPWMK ;
+   int16_t  SpeedPWMKP ,SpeedPWMKI ,SpeedPWMKD,SpeedPWMK ;
+   int16_t  SpeedPWMOUT;
+   int16_t  SpeedDifference0=0;
+   int16_t  speedDEARE1,speedDEARE2,DSpeed ;
 
-     LastSpeedCut0 =  nowValue ;
-     DSpeed =(int16_t) speedPid.goal ;
+   LastSpeedCut0 =  nowValue ;
+   DSpeed =(int16_t) speedPid.goal ;
 
-     SpeedDifference0 = DSpeed - LastSpeedCut0  ;
-     speedDEARE1 = LastSpeedCut0 - LastSpeedCut1;
-     speedDEARE2 = LastSpeedCut2+LastSpeedCut0-2*LastSpeedCut1;
-     LastSpeedCut2  = LastSpeedCut1;
-     LastSpeedCut1  = LastSpeedCut0;
+   SpeedDifference0 = DSpeed - LastSpeedCut0  ;  //当前误差
+   speedDEARE1 = LastSpeedCut0 - LastSpeedCut1;  // 误差的误差 
+   speedDEARE2 = LastSpeedCut2+LastSpeedCut0-2*LastSpeedCut1;  //当前的误差 +上上次的误差 - 2倍的上次误差
+   LastSpeedCut2  = LastSpeedCut1;
+   LastSpeedCut1  = LastSpeedCut0;
 
 
-          SpeedPWMKP = SpeedKP*SpeedDifference0;
+          SpeedPWMKP = SpeedKP*SpeedDifference0;   
           if(SpeedPWMKP>KPPLUSMAX){
            SpeedPWMKP = KPPLUSMAX;
           }else if (SpeedPWMKP <KPNEGATIVEMAX){

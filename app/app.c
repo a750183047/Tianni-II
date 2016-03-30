@@ -13,7 +13,7 @@ static const uint32_t DMA_PORT_TriggerSourceTable[] =
 
 //系统固定系数
 
-#define LongPressTime   50 //按键触发长按的时间
+#define LongPressTime   20 //按键触发长按的时间
 #define LongPressSpeed   2 //按键触发长按后执行速度
 
 
@@ -59,9 +59,9 @@ void keyScan(void * pdata)
 		else if(key_check(KEY_DOWN) == 0)
 		{ key = 2; }  //下键
 		else if(key_check(KEY_LEFT) == 0)
-		{ key = 3;}  //左键
+		{ key = 4;}  //左键
 		else if(key_check(KEY_RIGHT) == 0)
-		{ key = 4; }  //右键
+		{ key = 3; }  //右键
 		else key = 0;
 		
 		switch(keysave)
@@ -247,6 +247,26 @@ void SPEED_TASK(void *pdata)
 		DMA_EnableRequest(HW_DMA_CH1);
 		
 	 OSTimeDlyHMSM(0, 0, 0, 5);
+	}
+
+}
+
+/********************************************
+
+  路径识别
+
+********************************************/
+void CTRL_TASK(void * pdata)
+{
+
+	pdata = pdata;
+	while(1)
+	{
+		if(FLAG_RUN)
+		{
+				
+		
+		}
 	}
 
 }
