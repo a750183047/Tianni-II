@@ -50,6 +50,7 @@ u8 Set_UI(void);   //  参数设置界面 ID为3
 u8 Record_UI(void); // 参数储存界面 ID为4
 u8 Read_UI(void); //ID为5
 void AddNumString(u8 ss[],u8 n[]);//数字加入显示字符串
+void speedClear(void);            //电机舵机 回到初始状态
 
 #endif
 

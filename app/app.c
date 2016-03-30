@@ -24,6 +24,7 @@ OS_STK  APP_LED0_STK[TASK_STK_SIZE];
 OS_STK  KEY_TASK_STK[KEY_STK_SIZE];   //按键扫描
 OS_STK  OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
 OS_STK  DMA_TASK_STK[DMA_STK_SIZE];  //DMA
+OS_STK  SPEED_TASK_STK[SPEED_STK_SIZE];  //速度控制
 
 
 //信号量 邮箱 
@@ -35,40 +36,6 @@ int LEFT = 0;   //左线圈的值
 int RIGHT = 0;  //右线圈的值
 int ENCODE = 0; //编码器的值
 
-
-
-
-
-//LED小灯任务
-void AppLED1Task(void *pdata)
-{
-    pdata = pdata; //防止编译器出错 无实际意义
-	u8 key = 0;
-	u8 err;//邮箱信息
-	while(1)
-	{
-		
-		switch(key)
-		{
-			
-			
-		}	
-		OSTimeDlyHMSM(0, 0, 0, 100);
-	}
-}
-
-void AppLED0Task(void *pdata)
-{
-    pdata = pdata; //防止编译器出错 无实际意义
-	u16 a = 0;
-	while(1)
-	{
-		a++;
-		if(a>9999)
-			a =0;
-		OSTimeDlyHMSM(0, 0, 0, 300);
-	}
-}
 
 
 /***************
@@ -235,17 +202,17 @@ void DMA_COUNT_TAST(void *pdata)
 		LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH2);
 		RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH0);
 		
-		ENCODE = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH1);
+		
 	
 		DMA_CancelTransfer();
 		DMA_SetMajorLoopCounter(HW_DMA_CH0, DMA_CITER_ELINKNO_CITER_MASK);
 		DMA_SetMajorLoopCounter(HW_DMA_CH2, DMA_CITER_ELINKNO_CITER_MASK);
-		DMA_SetMajorLoopCounter(HW_DMA_CH1, DMA_CITER_ELINKNO_CITER_MASK);
+	
 		
 		/* 开始下一次传输 */
 		DMA_EnableRequest(HW_DMA_CH0);
 		DMA_EnableRequest(HW_DMA_CH2);
-		DMA_EnableRequest(HW_DMA_CH1);
+		
 		
 		OSTimeDlyHMSM(0, 0, 0, 10);
 		
@@ -255,6 +222,34 @@ void DMA_COUNT_TAST(void *pdata)
 
 }
 
+
+/********************************************
+
+   速度控制任务
+
+********************************************/
+
+void SPEED_TASK(void *pdata)
+{
+	pdata = pdata;
+	while(1)
+	{
+		ENCODE = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH1);
+		
+	
+		if(FLAG_RUN)
+		{
+			speedCtrl();
+		}
+		
+		DMA_CancelTransfer();
+		DMA_SetMajorLoopCounter(HW_DMA_CH1, DMA_CITER_ELINKNO_CITER_MASK);
+		DMA_EnableRequest(HW_DMA_CH1);
+		
+	 OSTimeDlyHMSM(0, 0, 0, 5);
+	}
+
+}
 
 /********************************************
 
@@ -276,24 +271,22 @@ void AppStartTast(void *pdata)
 /////////////////把要创建的任务放在这里////////////////////////////////
 	
 
-    OSTaskCreate(AppLED1Task,(void *)0,
-                &APP_LED1_STK[TASK_STK_SIZE - 1],
-                APP_LED1_TASK_PRIO); //建立LED1 任务
-	
-    OSTaskCreate(AppLED0Task,(void *)0,
-                &APP_LED0_STK[TASK_STK_SIZE - 1],
-                APP_LED0_TASK_PRIO); //建立LED0 任务
+
 	
 	 OSTaskCreate(keyScan,(void *)0,
                 &KEY_TASK_STK[TASK_STK_SIZE - 1],
                 App_KEY_SCAN_PRIO); //建立按键 任务
 	  OSTaskCreate(Task_OLED,(void *)0,
                 &OLED_TASK_STK[OLED_STK_SIZE -1],
-                OLED_TASK_PRIO); //建立按键 任务
+                OLED_TASK_PRIO); //建立  oled 任务
 	  
 	  OSTaskCreate(DMA_COUNT_TAST,(void *)0,
                 &DMA_TASK_STK[DMA_STK_SIZE -1],
-                DMA_TASK_PRIO); //建立按键 任务
+                DMA_TASK_PRIO); //建  dma 任务
+	  
+	  OSTaskCreate(SPEED_TASK,(void *)0,
+                &SPEED_TASK_STK[SPEED_STK_SIZE -1],
+                SPEED_TASK_PRIO); //建立  speed 任务
 	 
 	
 	
@@ -394,6 +387,8 @@ void allInit(void)
    speedInit();    //PWM初始化
    flash_init();   //Flash初始化	
    Flash_Read();   //读取Flash中储存的值
+	
+	
 
 
 }

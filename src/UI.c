@@ -116,40 +116,35 @@ u8 Run_UI()
 	u8 key = 0;
     u8 err;
 	
-  OLED_CLS();//清屏
+    OLED_CLS();//清屏
 	OLED_P6x8Str(0,0,S0);
 	OLED_P6x8Str(0,1,S1);
-  OLED_P6x8Str(0,2,SS);
-  LCD_Write_Number(95,0, 0);
+    OLED_P6x8Str(0,2,SS);
+    LCD_Write_Number(95,0, 0);
 	
 	
 	 while(1)
     {
 
 
-     
+		 if(key ==3)
+		 {
+		   
+			OLED_P6x8Str(0,2,SR);
+			FLAG_RUN = 1;      // 通过标志位来控制中断函数的执行与否
 
-     if(key ==3)
-     {
-       
-        OLED_P6x8Str(0,2,SR);
-        FLAG_RUN = 1;      // 通过标志位来控制中断函数的执行与否
+		 }
 
-     }
-
-     if(key == 4)
-		{
-                
-                FLAG_RUN = 0;         //标志位清零
-				FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH2,0);
-				FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH3,0);
-				FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1,1460);
-		
-			
+		 if(key == 4)
+		 {
+					
+				FLAG_RUN = 0;  //标志位清零
+				speedClear();  //回到初始状态
 				return Menu_UI_ID;//返回主界面
 
-		}
-		key=(u8)OSMboxPend(msg_key,200,&err);//按键邮箱
+		 }
+		 
+		 key=(u8)OSMboxPend(msg_key,200,&err);//按键邮箱
 		
     }
 
@@ -538,5 +533,18 @@ void AddNumString(u8 ss[],u8 n[])//数字加入显示字符串
 		ss[14+i] = n [i];
 	}
 	ss[18] = '\0';
+}
+
+
+/***********************************
+舵机归中 电机停止 
+***********************************/
+void speedClear(void)
+{
+
+	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH2,0);
+	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH3,0);
+	FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1,1460);
+
 }
 

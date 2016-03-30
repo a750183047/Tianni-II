@@ -9,20 +9,21 @@
 #include "UI.h"
 #include "ftm.h"
 #include "FlashUI.h"
+#include "Ctrl.h"
 
 
 //任务堆栈大小
 #define TASK_STK_SIZE              128
 #define KEY_STK_SIZE 			   128 //按键扫描任务
 #define OLED_STK_SIZE    		   2048 //UI显示
-#define DMA_STK_SIZE			   512
+#define DMA_STK_SIZE			   512   //DMA
+#define SPEED_STK_SIZE             512   //速度控制
 //定义任务优先级
-#define APP_START_TASK_PRIO        4
-#define APP_LED1_TASK_PRIO         5
-#define APP_LED0_TASK_PRIO         7
-#define App_KEY_SCAN_PRIO		   8
-#define OLED_TASK_PRIO	           9 //液晶显示任务
-#define DMA_TASK_PRIO			   6
+#define APP_START_TASK_PRIO        11    //任务创建
+#define App_KEY_SCAN_PRIO		   8    //按键扫描
+#define OLED_TASK_PRIO	           9   //液晶显示任务
+#define DMA_TASK_PRIO			   6    // DMA
+#define SPEED_TASK_PRIO            7    //速度控制
 
 
 
@@ -33,6 +34,7 @@ extern OS_STK  APP_LED0_STK[TASK_STK_SIZE];
 extern OS_STK  KEY_TASK_STK[KEY_STK_SIZE];
 extern OS_STK OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
 extern OS_STK  DMA_TASK_STK[DMA_STK_SIZE];  //DMA
+extern OS_STK  SPEED_TASK_STK[SPEED_STK_SIZE]; //速度控制
 
 
 //声明邮箱 

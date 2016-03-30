@@ -7,6 +7,7 @@
 ".\mk60d10\flash\key.o"
 ".\mk60d10\flash\ui.o"
 ".\mk60d10\flash\flashui.o"
+".\mk60d10\flash\ctrl.o"
 ".\mk60d10\flash\gpio.o"
 ".\mk60d10\flash\uart.o"
 ".\mk60d10\flash\wdog.o"
