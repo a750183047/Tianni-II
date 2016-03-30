@@ -25,6 +25,8 @@ static void KEY_Scan(void);
 void KEY_Init(void);    //按键初始化
 void KEY_Service(void); //中断管脚配置
 
+u8 key_check(KEY_e key);  //扫描按键
+
 #endif
 
 

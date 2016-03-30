@@ -18,10 +18,10 @@ void KEY_Init()
 u8 key_check(KEY_e key)
 {
     
-    if(GPIO_ReadBit(HW_GPIOA,key) == 0)
+    if(PAin(key) == 1)
     {
         OSTimeDly(10);
-        if(GPIO_ReadBit(HW_GPIOA,key) == 0)
+        if(PAin(key)  == 1)
         {
             return 0;
         }

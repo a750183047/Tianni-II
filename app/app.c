@@ -49,8 +49,8 @@ void AppLED1Task(void *pdata)
 			break;
 			
 		}	
-		key = (u8)OSMboxPend(msg_key,200,&err);
-		OSTimeDlyHMSM(0, 0, 0, 300);
+		key = (u8)OSMboxPend(msg_key,0,&err);
+		OSTimeDlyHMSM(0, 0, 0, 100);
 	}
 }
 
@@ -76,6 +76,8 @@ void AppLED0Task(void *pdata)
 ***********/
 void keyScan(void * pdata)
 {
+	
+	msg_key = OSMboxCreate((void*)0);	//创建空消息邮箱
     pdata = pdata;
     u16 T =0;
     u16 Ti=0;
@@ -83,13 +85,13 @@ void keyScan(void * pdata)
     u8 keysave;//上次按键状态保存
 	while(1)
 	{
-		if(KEY_U == 1)
+		if(key_check(KEY_UP) == 0)
 		{ key =1;}   //上键
-		else if(KEY_D == 1)
+		else if(key_check(KEY_DOWN) == 0)
 		{ key = 2; }  //下键
-		else if(KEY_A == 1)
+		else if(key_check(KEY_LEFT) == 0)
 		{ key = 3;}  //左键
-		else if(KEY_B == 1)
+		else if(key_check(KEY_RIGHT) == 0)
 		{ key = 4; }  //右键
 		else key = 0;
 		
@@ -98,7 +100,7 @@ void keyScan(void * pdata)
 			case 1:  //上
 				if(key != keysave)
 				{
-					OSMboxPost(msg_key,(u8 *)keysave);
+					OSMboxPost(msg_key,(void *)keysave);
 					T = 0;
 					Ti = 0;
 				}

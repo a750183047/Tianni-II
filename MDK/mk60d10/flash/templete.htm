@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\mk60d10\flash\templete.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\mk60d10\flash\templete.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Tue Mar 29 21:15:38 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Wed Mar 30 12:25:17 2016
 <BR><P>
 <H3>Maximum Stack Usage =        200 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -12,9 +12,9 @@ AppLED0Task &rArr; LCD_Write_Number &rArr; __2sprintf &rArr; _printf_char_common
 <H3>
 Functions with no stack information
 </H3><UL>
- <LI><a href="#[190]">__user_initial_stackheap</a>
- <LI><a href="#[9c]">OS_CPU_SR_Save</a>
- <LI><a href="#[a0]">OS_CPU_SR_Restore</a>
+ <LI><a href="#[18f]">__user_initial_stackheap</a>
+ <LI><a href="#[9e]">OS_CPU_SR_Save</a>
+ <LI><a href="#[a2]">OS_CPU_SR_Restore</a>
  <LI><a href="#[132]">OSStartHighRdy</a>
  <LI><a href="#[115]">OSCtxSw</a>
  <LI><a href="#[12f]">OSIntCtxSw</a>
@@ -182,13 +182,13 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[192]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[191]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[193]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[192]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[194]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[193]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
 
-<P><STRONG><a name="[195]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[194]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
 
 <P><STRONG><a name="[82]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -196,7 +196,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[196]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[195]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[83]"></a>_printf_d</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_d.o(.ARM.Collect$$_printf_percent$$00000009))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
@@ -205,78 +205,78 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
 </UL>
 
-<P><STRONG><a name="[18a]"></a>_printf_percent</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+<P><STRONG><a name="[189]"></a>_printf_percent</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
 </UL>
 
-<P><STRONG><a name="[197]"></a>_printf_percent_end</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
+<P><STRONG><a name="[196]"></a>_printf_percent_end</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
 
 <P><STRONG><a name="[88]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[198]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[197]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[199]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+<P><STRONG><a name="[198]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
 
-<P><STRONG><a name="[19a]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[199]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[19b]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[19a]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[19c]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[19b]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[19d]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[19c]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[19e]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[19d]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[19f]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[19e]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[1a0]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[19f]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[1a1]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+<P><STRONG><a name="[1a0]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
 
-<P><STRONG><a name="[1a2]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+<P><STRONG><a name="[1a1]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
 
-<P><STRONG><a name="[1a3]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[1a2]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[1a4]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[1a3]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[1a5]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[1a4]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[1a6]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[1a5]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[1a7]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[1a6]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
-<P><STRONG><a name="[1a8]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000031))
+<P><STRONG><a name="[1a7]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000031))
 
-<P><STRONG><a name="[1a9]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[1a8]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[1aa]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[1a9]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[1ab]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[1aa]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
 <P><STRONG><a name="[8d]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[1ac]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+<P><STRONG><a name="[1ab]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
 
-<P><STRONG><a name="[1ad]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+<P><STRONG><a name="[1ac]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
 
-<P><STRONG><a name="[1ae]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[1ad]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[1af]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+<P><STRONG><a name="[1ae]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
 
-<P><STRONG><a name="[1b0]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+<P><STRONG><a name="[1af]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
 
-<P><STRONG><a name="[1b1]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+<P><STRONG><a name="[1b0]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
 
 <P><STRONG><a name="[80]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[1b2]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[1b1]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[85]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -289,7 +289,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[1b3]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[1b2]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[89]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
@@ -299,9 +299,9 @@ Global Symbols
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[1b4]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[1b3]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
-<P><STRONG><a name="[191]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<P><STRONG><a name="[190]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
@@ -309,7 +309,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[1b5]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[1b4]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[8e]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -557,7 +557,7 @@ Global Symbols
 <P><STRONG><a name="[57]"></a>USBDCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mk60d10.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk60d10.o(RESET)
 </UL>
-<P><STRONG><a name="[190]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_mk60d10.o(.text))
+<P><STRONG><a name="[18f]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_mk60d10.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
@@ -573,7 +573,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[94]"></a>AppLED1Task</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, app.o(.text))
+<P><STRONG><a name="[94]"></a>AppLED1Task</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, app.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
 <LI>Call Chain = AppLED1Task &rArr; OSTimeDlyHMSM &rArr; OSTimeDly &rArr; OS_Sched
 </UL>
@@ -592,12 +592,14 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.text)
 </UL>
-<P><STRONG><a name="[9a]"></a>keyScan</STRONG> (Thumb, 308 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[9a]"></a>keyScan</STRONG> (Thumb, 312 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = keyScan &rArr; OSMboxPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyHMSM
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_check
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyHMSM
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.text)
 </UL>
@@ -605,12 +607,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = AppStartTast &rArr; OSTaskCreate &rArr; OS_TCBInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_ITConfig
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Cmd
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_ITConfig
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Cmd
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
@@ -618,130 +620,130 @@ Global Symbols
 <P><STRONG><a name="[90]"></a>allInit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, app.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = allInit &rArr; OLED_Init &rArr; GPIO_QuickInit &rArr; GPIO_Init &rArr; GPIO_PinConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[1b6]"></a>Dly_ms</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, oled.o(.text), UNUSED)
+<P><STRONG><a name="[1b5]"></a>Dly_ms</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, oled.o(.text), UNUSED)
 
-<P><STRONG><a name="[a8]"></a>OLED_WrDat</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, oled.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_String
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_BMP
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_CLS
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
+<P><STRONG><a name="[aa]"></a>OLED_WrDat</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, oled.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_String
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_BMP
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_CLS
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P6x8Str
 </UL>
 
-<P><STRONG><a name="[a6]"></a>OLED_WrCmd</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, oled.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_CLS
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<P><STRONG><a name="[a8]"></a>OLED_WrCmd</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, oled.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_CLS
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
 </UL>
 
-<P><STRONG><a name="[a5]"></a>OLED_Set_Pos</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, oled.o(.text))
+<P><STRONG><a name="[a7]"></a>OLED_Set_Pos</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, oled.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = OLED_Set_Pos
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_String
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_BMP
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_String
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_BMP
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_PutPixel
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P6x8Str
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
 </UL>
 
-<P><STRONG><a name="[a7]"></a>OLED_Fill</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, oled.o(.text))
+<P><STRONG><a name="[a9]"></a>OLED_Fill</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, oled.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = OLED_Fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
-</UL>
-
-<P><STRONG><a name="[a9]"></a>OLED_CLS</STRONG> (Thumb, 56 bytes, Stack size 12 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
 </UL>
 
-<P><STRONG><a name="[ab]"></a>OLED_DLY_ms</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, oled.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<P><STRONG><a name="[ab]"></a>OLED_CLS</STRONG> (Thumb, 56 bytes, Stack size 12 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
 
-<P><STRONG><a name="[a3]"></a>OLED_Init</STRONG> (Thumb, 260 bytes, Stack size 8 bytes, oled.o(.text))
+<P><STRONG><a name="[ad]"></a>OLED_DLY_ms</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, oled.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Rectangle
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+</UL>
+
+<P><STRONG><a name="[a5]"></a>OLED_Init</STRONG> (Thumb, 260 bytes, Stack size 8 bytes, oled.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = OLED_Init &rArr; GPIO_QuickInit &rArr; GPIO_Init &rArr; GPIO_PinConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_DLY_ms
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_DLY_ms
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Fill
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;allInit
 </UL>
 
-<P><STRONG><a name="[ac]"></a>OLED_PutPixel</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<P><STRONG><a name="[ae]"></a>OLED_PutPixel</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrCmd
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
 
-<P><STRONG><a name="[ad]"></a>OLED_Rectangle</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_DLY_ms
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<P><STRONG><a name="[af]"></a>OLED_Rectangle</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_DLY_ms
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
 
 <P><STRONG><a name="[95]"></a>OLED_P6x8Str</STRONG> (Thumb, 96 bytes, Stack size 28 bytes, oled.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = OLED_P6x8Str &rArr; OLED_Set_Pos
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_Number
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppLED1Task
 </UL>
 
-<P><STRONG><a name="[ae]"></a>OLED_P8x16Str</STRONG> (Thumb, 142 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<P><STRONG><a name="[b0]"></a>OLED_P8x16Str</STRONG> (Thumb, 142 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Print
-</UL>
-
-<P><STRONG><a name="[af]"></a>OLED_P14x16Str</STRONG> (Thumb, 250 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Print
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Print
 </UL>
 
-<P><STRONG><a name="[b0]"></a>OLED_Print</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
+<P><STRONG><a name="[b1]"></a>OLED_P14x16Str</STRONG> (Thumb, 250 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Print
 </UL>
 
-<P><STRONG><a name="[b1]"></a>Draw_BMP</STRONG> (Thumb, 118 bytes, Stack size 36 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<P><STRONG><a name="[b2]"></a>OLED_Print</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P14x16Str
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P8x16Str
 </UL>
 
-<P><STRONG><a name="[b2]"></a>LCD_Write_String</STRONG> (Thumb, 130 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+<P><STRONG><a name="[b3]"></a>Draw_BMP</STRONG> (Thumb, 118 bytes, Stack size 36 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
+</UL>
+
+<P><STRONG><a name="[b4]"></a>LCD_Write_String</STRONG> (Thumb, 130 bytes, Stack size 28 bytes, oled.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WrDat
 </UL>
 
 <P><STRONG><a name="[99]"></a>LCD_Write_Number</STRONG> (Thumb, 34 bytes, Stack size 72 bytes, oled.o(.text))
@@ -749,22 +751,26 @@ Global Symbols
 <LI>Call Chain = LCD_Write_Number &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P6x8Str
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppLED0Task
 </UL>
 
-<P><STRONG><a name="[a4]"></a>KEY_Init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, key.o(.text))
+<P><STRONG><a name="[a6]"></a>KEY_Init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = KEY_Init &rArr; GPIO_QuickInit &rArr; GPIO_Init &rArr; GPIO_PinConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;allInit
 </UL>
 
-<P><STRONG><a name="[b4]"></a>key_check</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, key.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadBit
+<P><STRONG><a name="[9c]"></a>key_check</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, key.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
+<LI>Call Chain = key_check &rArr; OSTimeDly &rArr; OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keyScan
 </UL>
 
 <P><STRONG><a name="[bb]"></a>PORT_PinMuxConfig</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, gpio.o(.text))
@@ -796,7 +802,7 @@ Global Symbols
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 
-<P><STRONG><a name="[1b7]"></a>PORT_PinPassiveFilterConfig</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, gpio.o(.text), UNUSED)
+<P><STRONG><a name="[1b6]"></a>PORT_PinPassiveFilterConfig</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, gpio.o(.text), UNUSED)
 
 <P><STRONG><a name="[ba]"></a>GPIO_PinConfig</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_PinConfig
@@ -812,27 +818,25 @@ Global Symbols
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinPullConfig
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinMuxConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_QuickInit
 </UL>
 
-<P><STRONG><a name="[aa]"></a>GPIO_QuickInit</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, gpio.o(.text))
+<P><STRONG><a name="[ac]"></a>GPIO_QuickInit</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = GPIO_QuickInit &rArr; GPIO_Init &rArr; GPIO_PinConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
 </UL>
 
-<P><STRONG><a name="[1b8]"></a>GPIO_WriteBit</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, gpio.o(.text), UNUSED)
+<P><STRONG><a name="[1b7]"></a>GPIO_WriteBit</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[1b9]"></a>GPIO_SetBit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<P><STRONG><a name="[1b8]"></a>GPIO_SetBit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[1ba]"></a>GPIO_ResetBit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<P><STRONG><a name="[1b9]"></a>GPIO_ResetBit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[b5]"></a>GPIO_ReadBit</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_check
-</UL>
+<P><STRONG><a name="[1ba]"></a>GPIO_ReadBit</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
 
 <P><STRONG><a name="[1bb]"></a>GPIO_ToggleBit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
 
@@ -1399,7 +1403,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk60d10.o(RESET)
 </UL>
-<P><STRONG><a name="[9d]"></a>SYSTICK_Init</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, systick.o(.text))
+<P><STRONG><a name="[9f]"></a>SYSTICK_Init</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, systick.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SYSTICK_Init &rArr; GetClock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetClock
@@ -1408,20 +1412,20 @@ Global Symbols
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_DelayInit
 </UL>
 
-<P><STRONG><a name="[9e]"></a>SYSTICK_ITConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, systick.o(.text))
+<P><STRONG><a name="[a0]"></a>SYSTICK_ITConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, systick.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppStartTast
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_DelayInit
 </UL>
 
-<P><STRONG><a name="[9f]"></a>SYSTICK_Cmd</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, systick.o(.text))
+<P><STRONG><a name="[a1]"></a>SYSTICK_Cmd</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, systick.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppStartTast
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_DelayInit
 </UL>
 
 <P><STRONG><a name="[ee]"></a>SYSTICK_DelayInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, systick.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_ITConfig
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Cmd
+<BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_ITConfig
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Cmd
 </UL>
 
 <P><STRONG><a name="[1f5]"></a>SYSTICK_DelayUs</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
@@ -1558,7 +1562,7 @@ Global Symbols
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PIT_Init
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDOG_Init
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_Init
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ENET_MII_Init
 </UL>
 
@@ -1571,7 +1575,7 @@ Global Symbols
 <P><STRONG><a name="[208]"></a>QuickInitDecode</STRONG> (Thumb, 10 bytes, Stack size 12 bytes, common.o(.text), UNUSED)
 
 <P><STRONG><a name="[10d]"></a>DWT_DelayInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, common.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
 </UL>
 
 <P><STRONG><a name="[10c]"></a>DWT_DelayUs</STRONG> (Thumb, 62 bytes, Stack size 12 bytes, common.o(.text), UNUSED)
@@ -1585,7 +1589,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayMs
 </UL>
 
-<P><STRONG><a name="[a2]"></a>DelayInit</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, common.o(.text))
+<P><STRONG><a name="[a4]"></a>DelayInit</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, common.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = DelayInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DWT_DelayInit
@@ -1605,16 +1609,16 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk60d10.o(RESET)
 </UL>
 <P><STRONG><a name="[111]"></a>OS_StrLen</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<BR><BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagNameGet
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameGet
 </UL>
 
 <P><STRONG><a name="[110]"></a>OSEventNameGet</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, os_core.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
 </UL>
 
@@ -1622,8 +1626,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
 <LI>Call Chain = OSEventNameSet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
 </UL>
@@ -1631,7 +1635,7 @@ Global Symbols
 <P><STRONG><a name="[118]"></a>OS_EventTaskRemoveMulti</STRONG> (Thumb, 58 bytes, Stack size 20 bytes, os_core.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = OS_EventTaskRemoveMulti
 </UL>
-<BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<BR>[Called By]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventPendMulti
 </UL>
@@ -1640,33 +1644,33 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSCtxSw
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_SchedNew
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPend
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
-<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
-<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPost
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPend
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagDel
@@ -1680,8 +1684,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[116]"></a>OSEventPendMulti</STRONG> (Thumb, 742 bytes, Stack size 64 bytes, os_core.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWaitMulti
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemoveMulti
@@ -1701,17 +1705,17 @@ Global Symbols
 <LI>Call Chain = OS_TaskStat &rArr; OS_TaskStatStkChk &rArr; OSTaskStkChk
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStatHook
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStatStkChk
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> os_core.o(.text)
 </UL>
 <P><STRONG><a name="[120]"></a>OS_TaskIdle</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, os_core.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskIdleHook
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> os_core.o(.text)
@@ -1745,7 +1749,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[185]"></a>OSIntEnter</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, os_core.o(.text))
+<P><STRONG><a name="[184]"></a>OSIntEnter</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, os_core.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
@@ -1753,8 +1757,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = OSIntExit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntCtxSw
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_SchedNew
 </UL>
@@ -1765,16 +1769,16 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = OSSchedLock
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
-<BR>[Called By]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
-<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
-<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
-<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
-<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<BR>[Called By]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
+<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
+<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
 </UL>
 
@@ -1782,17 +1786,17 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = OSSchedUnlock &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
-<BR>[Called By]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
-<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
-<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
-<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
-<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<BR>[Called By]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
+<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
+<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
 </UL>
 
@@ -1808,16 +1812,16 @@ Global Symbols
 
 <P><STRONG><a name="[133]"></a>OSStatInit</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, os_core.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[134]"></a>OSTimeTick</STRONG> (Thumb, 210 bytes, Stack size 16 bytes, os_core.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
 <LI>Call Chain = OSTimeTick &rArr; OSTimeTickHook &rArr; OSTmrSignal &rArr; OSSemPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
@@ -1825,17 +1829,17 @@ Global Symbols
 
 <P><STRONG><a name="[209]"></a>OSVersion</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
 
-<P><STRONG><a name="[16b]"></a>OS_Dummy</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_core.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<P><STRONG><a name="[16a]"></a>OS_Dummy</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 </UL>
 
 <P><STRONG><a name="[137]"></a>OS_EventTaskRemove</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, os_core.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = OS_EventTaskRemove
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPend
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 </UL>
 
@@ -1845,44 +1849,44 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemove
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemoveMulti
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
 </UL>
 
-<P><STRONG><a name="[14b]"></a>OS_EventTaskWait</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, os_core.o(.text))
+<P><STRONG><a name="[14a]"></a>OS_EventTaskWait</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, os_core.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = OS_EventTaskWait
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPend
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
 </UL>
 
-<P><STRONG><a name="[149]"></a>OS_EventWaitListInit</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, os_core.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
+<P><STRONG><a name="[148]"></a>OS_EventWaitListInit</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
 </UL>
 
-<P><STRONG><a name="[171]"></a>OS_MemCopy</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<P><STRONG><a name="[170]"></a>OS_MemCopy</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
 </UL>
 
 <P><STRONG><a name="[138]"></a>OS_TCBInit</STRONG> (Thumb, 370 bytes, Stack size 40 bytes, os_core.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
 <LI>Call Chain = OS_TCBInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateHook
 <LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTCBInitHook
 </UL>
@@ -1891,64 +1895,64 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[13b]"></a>OSFlagAccept</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[13c]"></a>OSFlagCreate</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[13e]"></a>OS_FlagUnlink</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, os_flag.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = OS_FlagUnlink
 </UL>
-<BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<BR>[Called By]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPend
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagTaskRdy
 </UL>
 
 <P><STRONG><a name="[13f]"></a>OSFlagDel</STRONG> (Thumb, 224 bytes, Stack size 32 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
 <P><STRONG><a name="[140]"></a>OSFlagNameGet</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
 </UL>
 
 <P><STRONG><a name="[141]"></a>OSFlagNameSet</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[142]"></a>OSFlagPend</STRONG> (Thumb, 626 bytes, Stack size 72 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagUnlink
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagBlock
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
 <P><STRONG><a name="[144]"></a>OSFlagPendGetFlagsRdy</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[145]"></a>OSFlagPost</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
 <P><STRONG><a name="[146]"></a>OSFlagQuery</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, os_flag.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[129]"></a>OS_FlagInit</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, os_flag.o(.text))
@@ -1960,19 +1964,24 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[147]"></a>OSMboxAccept</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[148]"></a>OSMboxCreate</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
+<P><STRONG><a name="[9b]"></a>OSMboxCreate</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, os_mbox.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = OSMboxCreate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keyScan
 </UL>
 
-<P><STRONG><a name="[14a]"></a>OSMboxDel</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[149]"></a>OSMboxDel</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, os_mbox.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
@@ -1981,75 +1990,75 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
 <LI>Call Chain = OSMboxPend &rArr; OS_EventTaskWait
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemove
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppLED1Task
 </UL>
 
-<P><STRONG><a name="[14c]"></a>OSMboxPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[14b]"></a>OSMboxPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_mbox.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[9b]"></a>OSMboxPost</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, os_mbox.o(.text))
+<P><STRONG><a name="[9d]"></a>OSMboxPost</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, os_mbox.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = OSMboxPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keyScan
 </UL>
 
-<P><STRONG><a name="[14d]"></a>OSMboxPostOpt</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[14c]"></a>OSMboxPostOpt</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, os_mbox.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[14e]"></a>OSMboxQuery</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, os_mbox.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[14d]"></a>OSMboxQuery</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, os_mbox.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[14f]"></a>OSMemCreate</STRONG> (Thumb, 164 bytes, Stack size 48 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[14e]"></a>OSMemCreate</STRONG> (Thumb, 164 bytes, Stack size 48 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[150]"></a>OSMemGet</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[14f]"></a>OSMemGet</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[151]"></a>OSMemNameGet</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[150]"></a>OSMemNameGet</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
 </UL>
 
-<P><STRONG><a name="[152]"></a>OSMemNameSet</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[151]"></a>OSMemNameSet</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[153]"></a>OSMemPut</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[152]"></a>OSMemPut</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[154]"></a>OSMemQuery</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[153]"></a>OSMemQuery</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[12a]"></a>OS_MemInit</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, os_mem.o(.text))
@@ -2060,68 +2069,68 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
 </UL>
 
-<P><STRONG><a name="[155]"></a>OSQAccept</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[154]"></a>OSQAccept</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[156]"></a>OSQCreate</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
+<P><STRONG><a name="[155]"></a>OSQCreate</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
 </UL>
 
-<P><STRONG><a name="[157]"></a>OSQDel</STRONG> (Thumb, 254 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[156]"></a>OSQDel</STRONG> (Thumb, 254 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[158]"></a>OSQFlush</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[157]"></a>OSQFlush</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[159]"></a>OSQPend</STRONG> (Thumb, 288 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
+<P><STRONG><a name="[158]"></a>OSQPend</STRONG> (Thumb, 288 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemove
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[15a]"></a>OSQPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[159]"></a>OSQPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[15b]"></a>OSQPost</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[15a]"></a>OSQPost</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[15c]"></a>OSQPostFront</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[15b]"></a>OSQPostFront</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[15d]"></a>OSQPostOpt</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[15c]"></a>OSQPostOpt</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[15e]"></a>OSQQuery</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[15d]"></a>OSQQuery</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, os_q.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[12b]"></a>OS_QInit</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, os_q.o(.text))
@@ -2132,74 +2141,74 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
 </UL>
 
-<P><STRONG><a name="[15f]"></a>OSSemAccept</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, os_sem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[15e]"></a>OSSemAccept</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[160]"></a>OSSemCreate</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, os_sem.o(.text))
+<P><STRONG><a name="[15f]"></a>OSSemCreate</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, os_sem.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = OSSemCreate
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
 </UL>
 
-<P><STRONG><a name="[161]"></a>OSSemDel</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, os_sem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[160]"></a>OSSemDel</STRONG> (Thumb, 220 bytes, Stack size 32 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[162]"></a>OSSemPend</STRONG> (Thumb, 236 bytes, Stack size 24 bytes, os_sem.o(.text))
+<P><STRONG><a name="[161]"></a>OSSemPend</STRONG> (Thumb, 236 bytes, Stack size 24 bytes, os_sem.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
 <LI>Call Chain = OSSemPend &rArr; OS_EventTaskWait
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemove
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
 </UL>
 
-<P><STRONG><a name="[163]"></a>OSSemPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_sem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[162]"></a>OSSemPendAbort</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[164]"></a>OSSemPost</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, os_sem.o(.text))
+<P><STRONG><a name="[163]"></a>OSSemPost</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, os_sem.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = OSSemPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
-<BR>[Called By]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
+<BR>[Called By]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
 </UL>
 
-<P><STRONG><a name="[165]"></a>OSSemQuery</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, os_sem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[164]"></a>OSSemQuery</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[166]"></a>OSSemSet</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, os_sem.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[165]"></a>OSSemSet</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[167]"></a>OSTaskChangePrio</STRONG> (Thumb, 418 bytes, Stack size 56 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[166]"></a>OSTaskChangePrio</STRONG> (Thumb, 418 bytes, Stack size 56 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
@@ -2207,9 +2216,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = OSTaskCreate &rArr; OS_TCBInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
@@ -2217,7 +2226,7 @@ Global Symbols
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[169]"></a>OS_TaskStkClr</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, os_task.o(.text))
+<P><STRONG><a name="[168]"></a>OS_TaskStkClr</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, os_task.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
 </UL>
 
@@ -2225,42 +2234,42 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
 <LI>Call Chain = OSTaskCreateExt &rArr; OS_TCBInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
-<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStkClr
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStkClr
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
-<BR>[Called By]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
+<BR>[Called By]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_InitTaskIdle
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_InitTaskStat
 </UL>
 
-<P><STRONG><a name="[16a]"></a>OSTaskDel</STRONG> (Thumb, 354 bytes, Stack size 24 bytes, os_task.o(.text))
+<P><STRONG><a name="[169]"></a>OSTaskDel</STRONG> (Thumb, 354 bytes, Stack size 24 bytes, os_task.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44 + Unknown Stack Size
 <LI>Call Chain = OSTaskDel &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelHook
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelHook
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_FlagUnlink
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemove
-<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Dummy
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Dummy
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRemoveMulti
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskReturn
 </UL>
 
-<P><STRONG><a name="[16d]"></a>OSTaskDelReq</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[16c]"></a>OSTaskDelReq</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[16e]"></a>OSTaskNameGet</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[16d]"></a>OSTaskNameGet</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
 </UL>
 
@@ -2268,17 +2277,17 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
 <LI>Call Chain = OSTaskNameSet
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
-<BR>[Called By]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
+<BR>[Called By]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_InitTaskIdle
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_InitTaskStat
 </UL>
 
-<P><STRONG><a name="[16f]"></a>OSTaskResume</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[16e]"></a>OSTaskResume</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
@@ -2286,46 +2295,46 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
 <LI>Call Chain = OSTaskStkChk
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 <BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStatStkChk
 </UL>
 
-<P><STRONG><a name="[a1]"></a>OSTaskSuspend</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, os_task.o(.text))
+<P><STRONG><a name="[a3]"></a>OSTaskSuspend</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, os_task.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
 <LI>Call Chain = OSTaskSuspend &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppStartTast
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
 </UL>
 
-<P><STRONG><a name="[170]"></a>OSTaskQuery</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemCopy
+<P><STRONG><a name="[16f]"></a>OSTaskQuery</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemCopy
 </UL>
 
-<P><STRONG><a name="[172]"></a>OSTaskRegGet</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[171]"></a>OSTaskRegGet</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[173]"></a>OSTaskRegSet</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[172]"></a>OSTaskRegSet</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
 <P><STRONG><a name="[7b]"></a>OS_TaskReturn</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, os_task.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52 + Unknown Stack Size
 <LI>Call Chain = OS_TaskReturn &rArr; OSTaskDel &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskReturnHook
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<BR>[Calls]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskReturnHook
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> os_cpu_c.o(.text)
 </UL>
@@ -2333,11 +2342,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
 <LI>Call Chain = OSTimeDly &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_check
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_check
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyHMSM
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
@@ -2354,69 +2363,69 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppLED1Task
 </UL>
 
-<P><STRONG><a name="[175]"></a>OSTimeDlyResume</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[174]"></a>OSTimeDlyResume</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
 </UL>
 
-<P><STRONG><a name="[176]"></a>OSTimeGet</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[175]"></a>OSTimeGet</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[177]"></a>OSTimeSet</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<P><STRONG><a name="[176]"></a>OSTimeSet</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
 </UL>
 
-<P><STRONG><a name="[178]"></a>OSTmrCreate</STRONG> (Thumb, 154 bytes, Stack size 40 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Alloc
+<P><STRONG><a name="[177]"></a>OSTmrCreate</STRONG> (Thumb, 154 bytes, Stack size 40 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Alloc
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[17a]"></a>OSTmrDel</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Free
+<P><STRONG><a name="[179]"></a>OSTmrDel</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Free
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[17d]"></a>OSTmrNameGet</STRONG> (Thumb, 134 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<P><STRONG><a name="[17c]"></a>OSTmrNameGet</STRONG> (Thumb, 134 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
 </UL>
 
-<P><STRONG><a name="[17e]"></a>OSTmrRemainGet</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
+<P><STRONG><a name="[17d]"></a>OSTmrRemainGet</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[17f]"></a>OSTmrStateGet</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
+<P><STRONG><a name="[17e]"></a>OSTmrStateGet</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[180]"></a>OSTmrStart</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
-<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<P><STRONG><a name="[17f]"></a>OSTmrStart</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
+<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[182]"></a>OSTmrStop</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<P><STRONG><a name="[181]"></a>OSTmrStop</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 
-<P><STRONG><a name="[183]"></a>OSTmrSignal</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, os_tmr.o(.text))
+<P><STRONG><a name="[182]"></a>OSTmrSignal</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, os_tmr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
 <LI>Call Chain = OSTmrSignal &rArr; OSSemPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
 </UL>
 <BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
 </UL>
@@ -2425,61 +2434,61 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
 <LI>Call Chain = OSTmr_Init &rArr; OSTmr_InitTask &rArr; OSTaskCreateExt &rArr; OS_TCBInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_InitTask
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemClr
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
 </UL>
 <BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
 </UL>
 
-<P><STRONG><a name="[9c]"></a>OS_CPU_SR_Save</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a_keil.o(.text))
+<P><STRONG><a name="[9e]"></a>OS_CPU_SR_Save</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a_keil.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPend
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppStartTast
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
-<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
-<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
-<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegSet
-<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegGet
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
-<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
-<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
-<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQQuery
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQFlush
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQAccept
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxQuery
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
+<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
+<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegSet
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegGet
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQQuery
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQFlush
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQAccept
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxQuery
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
 <LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxAccept
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagQuery
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPost
@@ -2507,53 +2516,53 @@ Global Symbols
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameGet
 </UL>
 
-<P><STRONG><a name="[a0]"></a>OS_CPU_SR_Restore</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a_keil.o(.text))
+<P><STRONG><a name="[a2]"></a>OS_CPU_SR_Restore</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a_keil.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPost
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPend
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppStartTast
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
-<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
-<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
-<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegSet
-<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegGet
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
-<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
-<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
-<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQQuery
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQFlush
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQAccept
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxQuery
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxCreate
+<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
+<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegSet
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskRegGet
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQQuery
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostOpt
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPostFront
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPost
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPendAbort
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQPend
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQFlush
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQDel
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQCreate
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSQAccept
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxQuery
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPostOpt
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxPendAbort
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxDel
 <LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMboxAccept
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagQuery
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPost
@@ -2608,15 +2617,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
 </UL>
 
-<P><STRONG><a name="[16c]"></a>OSTaskDelHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<P><STRONG><a name="[16b]"></a>OSTaskDelHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 </UL>
 
 <P><STRONG><a name="[121]"></a>OSTaskIdleHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskIdle
 </UL>
 
-<P><STRONG><a name="[174]"></a>OSTaskReturnHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<P><STRONG><a name="[173]"></a>OSTaskReturnHook</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskReturn
 </UL>
 
@@ -2624,7 +2633,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
 </UL>
 
-<P><STRONG><a name="[168]"></a>OSTaskStkInit</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, os_cpu_c.o(.text))
+<P><STRONG><a name="[167]"></a>OSTaskStkInit</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, os_cpu_c.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = OSTaskStkInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
@@ -2642,7 +2651,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
 <LI>Call Chain = OSTimeTickHook &rArr; OSTmrSignal &rArr; OSSemPost &rArr; OS_EventTaskRdy &rArr; OS_EventTaskRemoveMulti
 </UL>
-<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
+<BR>[Calls]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
 </UL>
@@ -2653,56 +2662,56 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
-<LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntEnter
+<LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntEnter
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mk60d10.o(RESET)
 </UL>
-<P><STRONG><a name="[b3]"></a>__2sprintf</STRONG> (Thumb, 34 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
+<P><STRONG><a name="[b5]"></a>__2sprintf</STRONG> (Thumb, 34 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
-<LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+<LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 <BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_Number
 </UL>
 
-<P><STRONG><a name="[18d]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<P><STRONG><a name="[18c]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_pre_padding
 </UL>
-<BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
 </UL>
 
-<P><STRONG><a name="[18e]"></a>_printf_post_padding</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<P><STRONG><a name="[18d]"></a>_printf_post_padding</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, _printf_pad.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_post_padding
 </UL>
-<BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
 </UL>
 
 <P><STRONG><a name="[84]"></a>_printf_int_dec</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, _printf_dec.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _printf_int_dec &rArr; _printf_int_common &rArr; _printf_post_padding
 </UL>
-<BR>[Calls]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<BR>[Calls]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
 </UL>
 <BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_d
 </UL>
 
-<P><STRONG><a name="[188]"></a>__printf</STRONG> (Thumb, 270 bytes, Stack size 32 bytes, __printf_wp.o(.text))
+<P><STRONG><a name="[187]"></a>__printf</STRONG> (Thumb, 270 bytes, Stack size 32 bytes, __printf_wp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
 <LI>Call Chain = __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_percent
-<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_is_digit
+<BR>[Calls]<UL><LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_percent
+<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_is_digit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+<BR>[Called By]<UL><LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 
 <P><STRONG><a name="[101]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ENET_MacReceiveData
 </UL>
 
-<P><STRONG><a name="[18b]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<P><STRONG><a name="[18a]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 
 <P><STRONG><a name="[20a]"></a>_memcpy_lastbytes</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_v6.o(.text), UNUSED)
@@ -2713,31 +2722,31 @@ Global Symbols
 
 <P><STRONG><a name="[20d]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[187]"></a>_printf_int_common</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, _printf_intcommon.o(.text))
+<P><STRONG><a name="[186]"></a>_printf_int_common</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, _printf_intcommon.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _printf_int_common &rArr; _printf_post_padding
 </UL>
-<BR>[Calls]<UL><LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<BR>[Calls]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
 </UL>
 
-<P><STRONG><a name="[186]"></a>_printf_char_common</STRONG> (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
+<P><STRONG><a name="[185]"></a>_printf_char_common</STRONG> (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
 <LI>Call Chain = _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+<BR>[Calls]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 
 <P><STRONG><a name="[7c]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _sputc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> noretval__2sprintf.o(.text)
 </UL>
-<P><STRONG><a name="[18c]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+<P><STRONG><a name="[18b]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
 </UL>
 
 <P><STRONG><a name="[20e]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
@@ -2750,21 +2759,21 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
-<LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
 </UL>
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
 
 <P><STRONG><a name="[8b]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+<BR><BR>[Calls]<UL><LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
 <P><STRONG><a name="[211]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[18f]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<P><STRONG><a name="[18e]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
@@ -2780,8 +2789,8 @@ Global Symbols
 
 <P><STRONG><a name="[215]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[189]"></a>_is_digit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, __printf_wp.o(i._is_digit))
-<BR><BR>[Called By]<UL><LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+<P><STRONG><a name="[188]"></a>_is_digit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, __printf_wp.o(i._is_digit))
+<BR><BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
 </UL>
 <P>
 <H3>
@@ -3004,27 +3013,27 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSFlagPend
 </UL>
 
-<P><STRONG><a name="[179]"></a>OSTmr_Alloc</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<P><STRONG><a name="[178]"></a>OSTmr_Alloc</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
 </UL>
 
-<P><STRONG><a name="[17c]"></a>OSTmr_Free</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<P><STRONG><a name="[17b]"></a>OSTmr_Free</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
 </UL>
 
-<P><STRONG><a name="[17b]"></a>OSTmr_Unlink</STRONG> (Thumb, 62 bytes, Stack size 12 bytes, os_tmr.o(.text))
+<P><STRONG><a name="[17a]"></a>OSTmr_Unlink</STRONG> (Thumb, 62 bytes, Stack size 12 bytes, os_tmr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = OSTmr_Unlink
 </UL>
-<BR>[Called By]<UL><LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
-<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
-<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<BR>[Called By]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
 </UL>
 
-<P><STRONG><a name="[181]"></a>OSTmr_Link</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, os_tmr.o(.text))
+<P><STRONG><a name="[180]"></a>OSTmr_Link</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, os_tmr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = OSTmr_Link
 </UL>
-<BR>[Called By]<UL><LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<BR>[Called By]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
 </UL>
 
@@ -3032,15 +3041,15 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
 <LI>Call Chain = OSTmr_Task &rArr; OSSemPend &rArr; OS_EventTaskWait
 </UL>
-<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
-<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<BR>[Calls]<UL><LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
+<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> os_tmr.o(.text)
 </UL>
-<P><STRONG><a name="[184]"></a>OSTmr_InitTask</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, os_tmr.o(.text))
+<P><STRONG><a name="[183]"></a>OSTmr_InitTask</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, os_tmr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = OSTmr_InitTask &rArr; OSTaskCreateExt &rArr; OS_TCBInit
 </UL>

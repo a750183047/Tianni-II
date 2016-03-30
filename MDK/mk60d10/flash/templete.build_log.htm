@@ -8,10 +8,14 @@ Project File Date:  03/29/2016
 
 <h2>Output:</h2>
 Build target 'mk60d10'
+compiling app.c...
+..\app\app.c(52): warning:  #767-D: conversion from pointer to smaller integer
+                key = (u8)OSMboxPend(msg_key,0,&err);
+..\app\app.c: 1 warning, 0 errors
 linking...
-Program Size: Code=35916 RO-data=4564 RW-data=300 ZI-data=14548  
+Program Size: Code=35924 RO-data=4564 RW-data=300 ZI-data=14548  
 FromELF: creating hex file...
-".\mk60d10\flash\templete.axf" - 0 Error(s), 0 Warning(s).
+".\mk60d10\flash\templete.axf" - 0 Error(s), 1 Warning(s).
 Load "E:\\·ÉË¼¿¨¶ûµÈ\\code\\2016-3-29\\MDK\\mk60d10\\flash\\templete.axf" 
 Set JLink Project File to "E:\·ÉË¼¿¨¶ûµÈ\code\2016-3-29\MDK\JLinkSettings.ini"
 * JLink Info: Device "MK60DN512XXX10" selected.
@@ -55,96 +59,4 @@ Erase Done.
 Programming Done.
 Verify OK.
 Application running ...
-</pre>
-</body>
-</html>
-re-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-ing ...
-e.
-Verify OK.
-Application running ...
-" is undefined
-                  gRetValue = KEY_SINGLE_A;
-..\src\KEY.c(69): error:  #20: identifier "KEY_B" is undefined
-                                                else if(KEY_B == 1)
-..\src\KEY.c(71): error:  #20: identifier "KEY_SINGLE_B" is undefined
-                  gRetValue = KEY_SINGLE_B;
-..\src\KEY.c(82): error:  #247: function "KEY_Init" has already been defined
-  void KEY_Init()
-..\src\KEY.c(96): error:  #20: identifier "KEY_SINGLE_U" is undefined
-          if(gRetValue == KEY_SINGLE_U) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(99): error:  #20: identifier "KEY_" is undefined
-             KEY_ = 1;
-..\src\KEY.c(104): error:  #20: identifier "KEY_SINGLE_D" is undefined
-          if(gRetValue == KEY_SINGLE_D) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(108): error:  #20: identifier "KEY_" is undefined
-             KEY_ = 2;
-..\src\KEY.c(112): error:  #20: identifier "KEY_SINGLE_A" is undefined
-          if(gRetValue == KEY_SINGLE_A) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(114): error:  #20: identifier "KEY_" is undefined
-              KEY_ = 3;
-..\src\KEY.c(118): error:  #20: identifier "KEY_SINGLE_B" is undefined
-          if(gRetValue == KEY_SINGLE_B) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(120): error:  #20: identifier "KEY_" is undefined
-             KEY_ = 4;
-..\src\KEY.c: 0 warnings, 26 errors
-".\mk60d10\flash\templete.axf" - 26 Error(s), 0 Warning(s).
-Target not created
-ned
-          if(gRetValue == KEY_SINGLE_A) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(102): error:  #20: identifier "KEY_" is undefined
-              KEY_ = 3;
-..\src\KEY.c(106): error:  #20: identifier "KEY_SINGLE_B" is undefined
-          if(gRetValue == KEY_SINGLE_B) //¼ì²âkey×´Ì¬£¨´øÑÓÊ±Ïû¶¶£©
-..\src\KEY.c(108): error:  #20: identifier "KEY_" is undefined
-             KEY_ = 4;
-..\src\KEY.c: 1 warning, 27 errors
-".\mk60d10\flash\templete.axf" - 27 Error(s), 1 Warning(s).
-Target not created
-it: 6 code (BP) slots and 2 literal slots
-* JLink Info: CoreSight components:
-* JLink Info: ROMTbl 0 @ E00FF000
-* JLink Info: ROMTbl 0 [0]: FFF0F000, CID: B105E00D, PID: 000BB000 SCS
-* JLink Info: ROMTbl 0 [1]: FFF02000, CID: B105E00D, PID: 003BB002 DWT
-* JLink Info: ROMTbl 0 [2]: FFF03000, CID: B105E00D, PID: 002BB003 FPB
-* JLink Info: ROMTbl 0 [3]: FFF01000, CID: B105E00D, PID: 003BB001 ITM
-* JLink Info: ROMTbl 0 [4]: FFF41000, CID: B105900D, PID: 000BB9A1 TPIU
-* JLink Info: ROMTbl 0 [5]: FFF42000, CID: B105900D, PID: 000BB925 ETM
-* JLink Info: ROMTbl 0 [6]: FFF43000, CID: B105900D, PID: 003BB907 ETB
-* JLink Info: ROMTbl 0 [7]: FFF44000, CID: B105900D, PID: 001BB908 CSTF
-ROMTableAddr = 0xE00FF003
-* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
-**JLink Warning: CPU did not halt after reset.
-**JLink Warning: Could not set S_RESET_ST
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: SYSRESETREQ has confused core. Trying to reconnect and use VECTRESET.
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-**JLink Warning: Failed to reset CPU. VECTRESET has confused core.
-**JLink Warning: CPU did not halt after reset.
-**JLink Warning: Could not set S_RESET_ST
-***JLink Error: Error while identifying Cortex-M core.
- 
-Target info:
-------------
-Device: MK60DN512xxx10
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 0
-Software-Breakpoints: 8192
-Watchpoints:          0
-JTAG speed: 2000 kHz
- 
-No Algorithm found for: 00000000H - 000087A3H
-Erase skipped!
-Error: Flash Download failed  -  "Cortex-M4"
+

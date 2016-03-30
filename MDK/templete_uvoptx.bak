@@ -13,7 +13,6 @@
     <tExt>*.txt; *.h; *.inc</tExt>
     <pExt>*.plm</pExt>
     <CppX>*.cpp</CppX>
-    <nMigrate>0</nMigrate>
   </Extensions>
 
   <DaveTm>
@@ -32,7 +31,6 @@
         <BeepAtEnd>1</BeepAtEnd>
         <RunSim>0</RunSim>
         <RunTarget>1</RunTarget>
-        <RunAbUc>0</RunAbUc>
       </OPTTT>
       <OPTHX>
         <HexSelection>1</HexSelection>
@@ -120,6 +118,7 @@
         <tRtrace>1</tRtrace>
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
+        <tPdscDbg>1</tPdscDbg>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
         <nTsel>6</nTsel>
@@ -149,7 +148,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>/</Name>
+          <Name></Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -159,7 +158,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U20080643 -O78 -S0 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0MK_P512.FLM -FS00 -FL080000 -FP0($$Device:MK60DN512xxx10$Flash\MK_P512.FLM)</Name>
+          <Name>-U286370559 -O78 -S0 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0MK_P512 -FS00 -FL080000</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -167,7 +166,31 @@
           <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0MK_P512 -FS00 -FL080000 -FP0($$Device:MK60DN512xxx10$Flash\MK_P512.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint/>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>52</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1924</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\app\app.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
+      <WatchWindow1>
+        <Ww>
+          <count>0</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>key</ItemText>
+        </Ww>
+      </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -199,7 +222,6 @@
       </DebugFlag>
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
-      <bLintAuto>0</bLintAuto>
     </TargetOption>
   </Target>
 
@@ -214,7 +236,6 @@
         <BeepAtEnd>1</BeepAtEnd>
         <RunSim>0</RunSim>
         <RunTarget>1</RunTarget>
-        <RunAbUc>0</RunAbUc>
       </OPTTT>
       <OPTHX>
         <HexSelection>1</HexSelection>
@@ -332,6 +353,7 @@
         <tRtrace>1</tRtrace>
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
+        <tPdscDbg>1</tPdscDbg>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
         <nTsel>6</nTsel>
@@ -411,7 +433,6 @@
       </DebugFlag>
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
-      <bLintAuto>0</bLintAuto>
     </TargetOption>
   </Target>
 
@@ -429,7 +450,7 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\startup\DeviceSupport\system_MK60D10.c</PathWithFileName>
+      <PathWithFileName>..\Libraries\startup\DeviceSupport\system_MK60D10.c</PathWithFileName>
       <FilenameWithoutPath>system_MK60D10.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -442,42 +463,8 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\startup\DeviceSupport\MDK-ARM\startup_MK60D10.s</PathWithFileName>
+      <PathWithFileName>..\Libraries\startup\DeviceSupport\MDK-ARM\startup_MK60D10.s</PathWithFileName>
       <FilenameWithoutPath>startup_MK60D10.s</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-  </Group>
-
-  <Group>
-    <GroupName>startup_mk64f12</GroupName>
-    <tvExp>0</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
-    <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>2</GroupNumber>
-      <FileNumber>3</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\startup\DeviceSupport\system_MK64F12.c</PathWithFileName>
-      <FilenameWithoutPath>system_MK64F12.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>2</GroupNumber>
-      <FileNumber>4</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\startup\DeviceSupport\MDK-ARM\startup_MK64F12.s</PathWithFileName>
-      <FilenameWithoutPath>startup_MK64F12.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -490,8 +477,8 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>5</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -505,11 +492,45 @@
   </Group>
 
   <Group>
-    <GroupName>drivers</GroupName>
+    <GroupName>App</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>4</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\app\app.c</PathWithFileName>
+      <FilenameWithoutPath>app.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>peripheral</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\src\OLED.c</PathWithFileName>
+      <FilenameWithoutPath>OLED.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
     <File>
       <GroupNumber>4</GroupNumber>
       <FileNumber>6</FileNumber>
@@ -518,228 +539,249 @@
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\gpio.c</PathWithFileName>
+      <PathWithFileName>..\src\KEY.c</PathWithFileName>
+      <FilenameWithoutPath>KEY.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>drivers</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>7</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>1</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Libraries\drivers\K\src\gpio.c</PathWithFileName>
       <FilenameWithoutPath>gpio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
-      <FileNumber>7</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\uart.c</PathWithFileName>
-      <FilenameWithoutPath>uart.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\wdog.c</PathWithFileName>
-      <FilenameWithoutPath>wdog.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\uart.c</PathWithFileName>
+      <FilenameWithoutPath>uart.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\pit.c</PathWithFileName>
-      <FilenameWithoutPath>pit.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\wdog.c</PathWithFileName>
+      <FilenameWithoutPath>wdog.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\cpuidy.c</PathWithFileName>
-      <FilenameWithoutPath>cpuidy.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\pit.c</PathWithFileName>
+      <FilenameWithoutPath>pit.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\adc.c</PathWithFileName>
-      <FilenameWithoutPath>adc.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\cpuidy.c</PathWithFileName>
+      <FilenameWithoutPath>cpuidy.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\ftm.c</PathWithFileName>
-      <FilenameWithoutPath>ftm.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\adc.c</PathWithFileName>
+      <FilenameWithoutPath>adc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\i2c.c</PathWithFileName>
-      <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\ftm.c</PathWithFileName>
+      <FilenameWithoutPath>ftm.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\spi.c</PathWithFileName>
-      <FilenameWithoutPath>spi.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\i2c.c</PathWithFileName>
+      <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\lptmr.c</PathWithFileName>
-      <FilenameWithoutPath>lptmr.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\spi.c</PathWithFileName>
+      <FilenameWithoutPath>spi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\dma.c</PathWithFileName>
-      <FilenameWithoutPath>dma.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\lptmr.c</PathWithFileName>
+      <FilenameWithoutPath>lptmr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\flexbus.c</PathWithFileName>
-      <FilenameWithoutPath>flexbus.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\dma.c</PathWithFileName>
+      <FilenameWithoutPath>dma.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\systick.c</PathWithFileName>
-      <FilenameWithoutPath>systick.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\flexbus.c</PathWithFileName>
+      <FilenameWithoutPath>flexbus.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\rtc.c</PathWithFileName>
-      <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\systick.c</PathWithFileName>
+      <FilenameWithoutPath>systick.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>20</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\enet.c</PathWithFileName>
-      <FilenameWithoutPath>enet.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\rtc.c</PathWithFileName>
+      <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\tsi.c</PathWithFileName>
-      <FilenameWithoutPath>tsi.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\enet.c</PathWithFileName>
+      <FilenameWithoutPath>enet.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>22</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\common.c</PathWithFileName>
-      <FilenameWithoutPath>common.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\drivers\K\src\tsi.c</PathWithFileName>
+      <FilenameWithoutPath>tsi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>4</GroupNumber>
+      <GroupNumber>5</GroupNumber>
       <FileNumber>23</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\drivers\K\src\sd.c</PathWithFileName>
+      <PathWithFileName>..\Libraries\drivers\K\src\common.c</PathWithFileName>
+      <FilenameWithoutPath>common.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>24</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Libraries\drivers\K\src\sd.c</PathWithFileName>
       <FilenameWithoutPath>sd.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -753,131 +795,131 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>24</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_core.c</PathWithFileName>
-      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>25</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_flag.c</PathWithFileName>
-      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_core.c</PathWithFileName>
+      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>26</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_mbox.c</PathWithFileName>
-      <FilenameWithoutPath>os_mbox.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_flag.c</PathWithFileName>
+      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>27</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_mem.c</PathWithFileName>
-      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_mbox.c</PathWithFileName>
+      <FilenameWithoutPath>os_mbox.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>28</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_mutex.c</PathWithFileName>
-      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_mem.c</PathWithFileName>
+      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>29</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_q.c</PathWithFileName>
-      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_mutex.c</PathWithFileName>
+      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>30</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_sem.c</PathWithFileName>
-      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_q.c</PathWithFileName>
+      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>31</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_task.c</PathWithFileName>
-      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_sem.c</PathWithFileName>
+      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>32</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_time.c</PathWithFileName>
-      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_task.c</PathWithFileName>
+      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>5</GroupNumber>
+      <GroupNumber>6</GroupNumber>
       <FileNumber>33</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\core\os_tmr.c</PathWithFileName>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_time.c</PathWithFileName>
+      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>34</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\core\os_tmr.c</PathWithFileName>
       <FilenameWithoutPath>os_tmr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -886,32 +928,32 @@
 
   <Group>
     <GroupName>uCOSII_Config</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>34</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\config\includes.h</PathWithFileName>
-      <FilenameWithoutPath>includes.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
+      <GroupNumber>7</GroupNumber>
       <FileNumber>35</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\config\os_cfg.h</PathWithFileName>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\config\includes.h</PathWithFileName>
+      <FilenameWithoutPath>includes.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>36</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\config\os_cfg.h</PathWithFileName>
       <FilenameWithoutPath>os_cfg.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -925,40 +967,40 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>36</FileNumber>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>37</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\port\os_cpu_a_keil.asm</PathWithFileName>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\port\os_cpu_a_keil.asm</PathWithFileName>
       <FilenameWithoutPath>os_cpu_a_keil.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>37</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\port\os_cpu_c.c</PathWithFileName>
-      <FilenameWithoutPath>os_cpu_c.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>7</GroupNumber>
+      <GroupNumber>8</GroupNumber>
       <FileNumber>38</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\Libraries\utilities\uCOSII\port\os_dbg.c</PathWithFileName>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\port\os_cpu_c.c</PathWithFileName>
+      <FilenameWithoutPath>os_cpu_c.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>39</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Libraries\utilities\uCOSII\port\os_dbg.c</PathWithFileName>
       <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
