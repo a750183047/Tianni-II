@@ -1,6 +1,7 @@
 #include "app.h"
 
 
+
 //系统固定系数
 
 #define LongPressTime   50 //按键触发长按的时间
@@ -12,6 +13,7 @@ OS_STK  APP_START_STK[TASK_STK_SIZE];
 OS_STK  APP_LED1_STK[TASK_STK_SIZE];
 OS_STK  APP_LED0_STK[TASK_STK_SIZE];
 OS_STK  KEY_TASK_STK[KEY_STK_SIZE];   //按键扫描
+OS_STK OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
 
 
 //信号量 邮箱 
@@ -31,25 +33,9 @@ void AppLED1Task(void *pdata)
 		
 		switch(key)
 		{
-			case 1:
-			OLED_P6x8Str(0,0,"1");
 			
-			break;
-			
-			case 2:
-				OLED_P6x8Str(0,0,"2");
-			break;
-			case 3:
-			OLED_P6x8Str(0,0,"3");
-			
-			break;
-			
-			case 4:
-				OLED_P6x8Str(0,0,"4");
-			break;
 			
 		}	
-		key = (u8)OSMboxPend(msg_key,0,&err);
 		OSTimeDlyHMSM(0, 0, 0, 100);
 	}
 }
@@ -61,7 +47,6 @@ void AppLED0Task(void *pdata)
 	while(1)
 	{
 		a++;
-		LCD_Write_Number(1,2,a);
 		if(a>9999)
 			a =0;
 		OSTimeDlyHMSM(0, 0, 0, 300);
@@ -191,8 +176,30 @@ void keyScan(void * pdata)
 				break;
 		}
 		keysave = key; 
-		OSTimeDlyHMSM(0, 0, 0, 50);
+		OSTimeDlyHMSM(0, 0, 0, 10);
 	}	
+
+}
+
+/********************************************
+
+显示任务
+
+*********************************************/
+
+void Task_OLED(void *pdata)
+{
+	pdata = pdata;
+	u8 ID = 0;
+	
+	
+	while(1)
+	{
+		ID = FunctionPointer[ID]();
+		OSTimeDlyHMSM(0, 0, 0, 10);
+	
+	}
+
 
 }
 
@@ -227,7 +234,11 @@ void AppStartTast(void *pdata)
 	
 	 OSTaskCreate(keyScan,(void *)0,
                 &KEY_TASK_STK[TASK_STK_SIZE - 1],
-                App_KEY_SCAN_PRIO); //建立LED0 任务
+                App_KEY_SCAN_PRIO); //建立按键 任务
+	  OSTaskCreate(Task_OLED,(void *)0,
+                &OLED_TASK_STK[OLED_STK_SIZE -1],
+                OLED_TASK_PRIO); //建立按键 任务
+	 
 	
 	
 	

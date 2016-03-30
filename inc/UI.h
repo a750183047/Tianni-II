@@ -17,6 +17,8 @@ extern u8 Plan_6;
 
 extern u8 FLAG_RUN;
 
+extern u8 (*FunctionPointer[11])(void);
+
 
 #define Menu_UI_ID               0
 #define Run_UI_ID                1

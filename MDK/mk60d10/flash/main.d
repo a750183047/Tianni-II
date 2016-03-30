@@ -24,3 +24,4 @@
 .\mk60d10\flash\main.o: ..\Libraries\drivers\K\inc\systick.h
 .\mk60d10\flash\main.o: ..\inc\OLED.h
 .\mk60d10\flash\main.o: ..\inc\KEY.h
+.\mk60d10\flash\main.o: ..\inc\UI.h

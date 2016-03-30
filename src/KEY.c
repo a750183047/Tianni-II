@@ -18,10 +18,10 @@ void KEY_Init()
 u8 key_check(KEY_e key)
 {
     
-    if(PAin(key) == 1)
+    if(PAin(key))
     {
         OSTimeDly(10);
-        if(PAin(key)  == 1)
+        if(PAin(key))
         {
             return 0;
         }

@@ -1,5 +1,6 @@
 #include "includes.h"
 #include "FlashUI.h"
+#include "flash.h"
 
 extern u16 adc_max[8];
 extern u16 adc_min[8];
@@ -49,5 +50,8 @@ void Flash_Read()
 //  missLine= ((float)(flash_read(SECTOR_NUM, 48, u32)));
 //  missLine_M= ((float)(flash_read(SECTOR_NUM, 52, u32)));
 }
+
+
+
 
 
