@@ -1,6 +1,15 @@
 #include "app.h"
 
 
+static const uint32_t DMA_PORT_TriggerSourceTable[] = 
+{
+    PORTA_DMAREQ,
+    PORTB_DMAREQ,
+    PORTC_DMAREQ,
+    PORTD_DMAREQ,
+    PORTE_DMAREQ,
+};
+
 
 //系统固定系数
 
@@ -13,11 +22,19 @@ OS_STK  APP_START_STK[TASK_STK_SIZE];
 OS_STK  APP_LED1_STK[TASK_STK_SIZE];
 OS_STK  APP_LED0_STK[TASK_STK_SIZE];
 OS_STK  KEY_TASK_STK[KEY_STK_SIZE];   //按键扫描
-OS_STK OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
+OS_STK  OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
+OS_STK  DMA_TASK_STK[DMA_STK_SIZE];  //DMA
 
 
 //信号量 邮箱 
 OS_EVENT *msg_key;				  //按键邮箱块指针
+
+
+//全局变量 
+int LEFT = 0;   //左线圈的值
+int RIGHT = 0;  //右线圈的值
+int ENCODE = 0; //编码器的值
+
 
 
 
@@ -203,6 +220,41 @@ void Task_OLED(void *pdata)
 
 }
 
+/*********************************************
+
+
+DMA检测
+
+*********************************************/
+void DMA_COUNT_TAST(void *pdata)
+{
+	pdata =pdata;
+	
+	while(1)
+	{
+		LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH2);
+		RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH0);
+		
+		ENCODE = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH1);
+	
+		DMA_CancelTransfer();
+		DMA_SetMajorLoopCounter(HW_DMA_CH0, DMA_CITER_ELINKNO_CITER_MASK);
+		DMA_SetMajorLoopCounter(HW_DMA_CH2, DMA_CITER_ELINKNO_CITER_MASK);
+		DMA_SetMajorLoopCounter(HW_DMA_CH1, DMA_CITER_ELINKNO_CITER_MASK);
+		
+		/* 开始下一次传输 */
+		DMA_EnableRequest(HW_DMA_CH0);
+		DMA_EnableRequest(HW_DMA_CH2);
+		DMA_EnableRequest(HW_DMA_CH1);
+		
+		OSTimeDlyHMSM(0, 0, 0, 10);
+		
+		
+	}
+		
+
+}
+
 
 /********************************************
 
@@ -238,6 +290,10 @@ void AppStartTast(void *pdata)
 	  OSTaskCreate(Task_OLED,(void *)0,
                 &OLED_TASK_STK[OLED_STK_SIZE -1],
                 OLED_TASK_PRIO); //建立按键 任务
+	  
+	  OSTaskCreate(DMA_COUNT_TAST,(void *)0,
+                &DMA_TASK_STK[DMA_STK_SIZE -1],
+                DMA_TASK_PRIO); //建立按键 任务
 	 
 	
 	
@@ -265,6 +321,59 @@ void AppStartTast(void *pdata)
 }
 
 
+/**
+ * @brief  DMA 用作脉冲计数初始化     
+ * @param  dmaChl :DMA通道号
+ * @param  instance :端口号 比如HW_GPIOA
+ * @param  pinIndex :引脚号
+ * @retval None
+ */
+ void DMA_PulseCountInit(uint32_t dmaChl, uint32_t instance, uint32_t pinIndex)
+{
+    /* 开启2路引脚 配置为DMA触发 */
+    GPIO_QuickInit(instance, pinIndex, kGPIO_Mode_IFT);
+    /* 配置为DMA上升沿触发 */
+    GPIO_ITDMAConfig(instance, pinIndex, kGPIO_DMA_RisingEdge, true);
+    /* 配置DMA */
+    static uint8_t dummy1, dummy2;
+    DMA_InitTypeDef DMA_InitStruct1 = {0};  
+    DMA_InitStruct1.chl = dmaChl;  
+    DMA_InitStruct1.chlTriggerSource = DMA_PORT_TriggerSourceTable[instance];
+    DMA_InitStruct1.triggerSourceMode = kDMA_TriggerSource_Normal; 
+    DMA_InitStruct1.minorLoopByteCnt = 1;
+    DMA_InitStruct1.majorLoopCnt = DMA_CITER_ELINKNO_CITER_MASK; /* 最大值 */
+    
+    DMA_InitStruct1.sAddr = (uint32_t)&dummy1;
+    DMA_InitStruct1.sLastAddrAdj = 0; 
+    DMA_InitStruct1.sAddrOffset = 0;
+    DMA_InitStruct1.sDataWidth = kDMA_DataWidthBit_8;
+    DMA_InitStruct1.sMod = kDMA_ModuloDisable;
+    
+    DMA_InitStruct1.dAddr = (uint32_t)&dummy2; 
+    DMA_InitStruct1.dLastAddrAdj = 0;
+    DMA_InitStruct1.dAddrOffset = 0; 
+    DMA_InitStruct1.dDataWidth = kDMA_DataWidthBit_8;
+    DMA_InitStruct1.dMod = kDMA_ModuloDisable;
+    DMA_Init(&DMA_InitStruct1);
+    /* 启动传输 */
+    DMA_EnableRequest(dmaChl);
+}
+
+
+
+//DMA初始化
+void dmaInit(void)
+{
+
+	DMA_PulseCountInit(HW_DMA_CH0, HW_GPIOB, 0);
+	DMA_PulseCountInit(HW_DMA_CH2, HW_GPIOC, 6);
+	DMA_PulseCountInit(HW_DMA_CH1, HW_GPIOA, 6);
+
+
+}
+
+
+
 
 void allInit(void)
 {
@@ -272,7 +381,7 @@ void allInit(void)
    DelayInit();    //延时初始化
    OLED_Init();    //OLED初始化
    KEY_Init();     //按键初始化
-   
+   dmaInit();      //DMA初始化
 
 
 }

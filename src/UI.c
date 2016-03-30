@@ -235,9 +235,9 @@ u8	Read_UI()
 			
 		  
 			
-//		LCD_Write_Number(95,2, ChlValue[0]);
-//		LCD_Write_Number(95,3, ChlValue[2]);
-//		LCD_Write_Number(95,4, (int)xbh*1000);
+		LCD_Write_Number(95,2, LEFT);
+		LCD_Write_Number(95,3, RIGHT);
+		LCD_Write_Number(95,4, ENCODE);
 //		LCD_Write_Number(95,5, ChlValue[1]);
 			
 		if(key == 4)
@@ -248,7 +248,7 @@ u8	Read_UI()
 			return Menu_UI_ID;
 					
 		}
-		key=(u8)OSMboxPend(msg_key,50,&err);//∞¥º¸” œ‰
+		key=(u8)OSMboxPend(msg_key,5,&err);//∞¥º¸” œ‰
 		
 	}
 		

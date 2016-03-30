@@ -24,5 +24,6 @@
 .\mk60d10\flash\ui.o: ..\Libraries\drivers\K\inc\systick.h
 .\mk60d10\flash\ui.o: ..\inc\OLED.h
 .\mk60d10\flash\ui.o: ..\Libraries\drivers\K\inc\gpio.h
+.\mk60d10\flash\ui.o: ..\Libraries\drivers\K\inc\dma.h
 .\mk60d10\flash\ui.o: ..\Libraries\drivers\K\inc\ftm.h
 .\mk60d10\flash\ui.o: ..\inc\FlashUI.h

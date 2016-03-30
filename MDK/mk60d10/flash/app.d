@@ -23,4 +23,5 @@
 .\mk60d10\flash\app.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h
 .\mk60d10\flash\app.o: ..\Libraries\drivers\K\inc\gpio.h
 .\mk60d10\flash\app.o: ..\inc\KEY.h
+.\mk60d10\flash\app.o: ..\Libraries\drivers\K\inc\dma.h
 .\mk60d10\flash\app.o: ..\inc\UI.h
