@@ -373,7 +373,16 @@ void dmaInit(void)
 }
 
 
+void speedInit()
+{
+	FTM_PWM_QuickInit(FTM0_CH3_PC04,kPWM_EdgeAligned,10000);
+	FTM_PWM_QuickInit(FTM0_CH2_PC03,kPWM_EdgeAligned,10000);
+    FTM_PWM_QuickInit(FTM1_CH1_PA09,kPWM_EdgeAligned,100);
+	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH3, 0);
+	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH2, 0);
+	FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1, 1460);
 
+}
 
 void allInit(void)
 {
@@ -382,6 +391,9 @@ void allInit(void)
    OLED_Init();    //OLED初始化
    KEY_Init();     //按键初始化
    dmaInit();      //DMA初始化
+   speedInit();    //PWM初始化
+   flash_init();   //Flash初始化	
+   Flash_Read();   //读取Flash中储存的值
 
 
 }

@@ -25,3 +25,5 @@
 .\mk60d10\flash\app.o: ..\inc\KEY.h
 .\mk60d10\flash\app.o: ..\Libraries\drivers\K\inc\dma.h
 .\mk60d10\flash\app.o: ..\inc\UI.h
+.\mk60d10\flash\app.o: ..\Libraries\drivers\K\inc\ftm.h
+.\mk60d10\flash\app.o: ..\inc\FlashUI.h

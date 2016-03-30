@@ -7,6 +7,8 @@
 #include "KEY.h"
 #include "dma.h"
 #include "UI.h"
+#include "ftm.h"
+#include "FlashUI.h"
 
 
 //任务堆栈大小
