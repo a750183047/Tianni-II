@@ -452,6 +452,21 @@
               <FileType>1</FileType>
               <FilePath>..\src\KEY.c</FilePath>
             </File>
+            <File>
+              <FileName>UI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\UI.c</FilePath>
+            </File>
+            <File>
+              <FileName>FlashUI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\FlashUI.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\Ctrl.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -546,6 +561,11 @@
               <FileName>sd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Libraries\drivers\K\src\sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\drivers\K\src\flash.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1147,6 +1167,21 @@
               <FileType>1</FileType>
               <FilePath>..\src\KEY.c</FilePath>
             </File>
+            <File>
+              <FileName>UI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\UI.c</FilePath>
+            </File>
+            <File>
+              <FileName>FlashUI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\FlashUI.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\Ctrl.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1241,6 +1276,11 @@
               <FileName>sd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Libraries\drivers\K\src\sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\drivers\K\src\flash.c</FilePath>
             </File>
           </Files>
         </Group>

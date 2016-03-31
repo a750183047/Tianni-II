@@ -19,8 +19,12 @@
 #define  KOUPLUSMAX     (5000)
 
 
+#define  DUTY_MAX        170
+#define  DUTY_MIN        -170 
+
+
 void readencode(void);
-void  ctrls(int r,int l);
+void  ctrls(void);
 
 
 void speedCtrl(void); //ËÙ¶È¿ØÖÆ

@@ -124,63 +124,74 @@ void speedCtrl(void)
 //¶æ»úPID
 void streePID(int nowValue)
 {
+	
 
-	stree_pid.error[0] = 0;
-	stree_pid.error[1] = 0;
-	stree_pid.error[2] = 0;
-	stree_pid.error[3] = 0;
+      float stree_p,stree_i,stree_d;
 	
-	stree_pid.error[0] = nowValue;
-	stree_pid.error[1] += stree_pid.error[0];
-	stree_pid.error[2] = stree_pid.error[0] - stree_pid.error[3];
-	stree_pid.error[3] = stree_pid.error[0];
+      int pid_count = 0,pid_errsum = 0;
 	
+      stree_p = stree_pid.p;
 	
-	stree_pid.result = stree_pid.p * stree_pid.error[0] 
-						+ stree_pid.i * stree_pid.error[1]
-						+ stree_pid.d * stree_pid.error[2];
+      stree_i = stree_pid.i;
 	
+      stree_d = stree_pid.d;
+	
+      stree_pid.error[1] = nowValue - 180;
+	
+      pid_errsum +=  stree_pid.error[1] * stree_i;
+	
+      stree_pid.result =(int) (stree_p * stree_pid.error[1]);
+	
+      stree_pid.result += pid_errsum;
+	
+      stree_pid.result += stree_d * (stree_pid.error[1] - stree_pid.error[0]);
+	
+      pid_count ++;
+	
+      stree_pid.error[0] = stree_pid.error[1];
+	
+	  if(stree_pid.result > DUTY_MAX)
+	  {
+	  
+		stree_pid.result = DUTY_MAX;
+	  
+	  }
+	  if(stree_pid.result < DUTY_MIN)
+	  {
+	  
+		stree_pid.result = DUTY_MIN;
+		  
+	  }
+    
 }
 
 
-void  ctrls(int r,int l)
+void  ctrls(void)
 {
 
-	int dutyValue = 0;
+	int C = LEFT - RIGHT;
 	
-	int yr,yl;
+	streePID(C);
 	
-	int value;
-	
-	float p1 =   0.1399;
-	float p2 =  -364.1;
-	
-	float p3 =  -0.8495;
-	float p4 = 2370;
-
-
-	yr =  p1*r + p2;
-	
-	yl = p1*l + p2;
-	
-	value = yl-yr ;
-	
-	if(value>0)
-	streePID(yr);
-	if(value<0)
-	streePID(yl);
-	
-	dutyValue = stree_pid.result *17;
-	
-	if(dutyValue>170)
-	{
-		dutyValue = 170;
-	}
-	if(dutyValue<-170)
-	{
-		dutyValue = -170;
-	}
-	FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1, 1460-dutyValue);
+	FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1, 1460+stree_pid.result);
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

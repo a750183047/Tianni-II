@@ -25,6 +25,7 @@ OS_STK  KEY_TASK_STK[KEY_STK_SIZE];   //按键扫描
 OS_STK  OLED_TASK_STK[OLED_STK_SIZE];  //UI显示
 OS_STK  DMA_TASK_STK[DMA_STK_SIZE];  //DMA
 OS_STK  SPEED_TASK_STK[SPEED_STK_SIZE];  //速度控制
+OS_STK  CTRL_TASK_STK[CTRL_STK_SIZE];    //路径识别
 
 
 //信号量 邮箱 
@@ -264,9 +265,10 @@ void CTRL_TASK(void * pdata)
 	{
 		if(FLAG_RUN)
 		{
-				
+			ctrls();	
 		
 		}
+		OSTimeDlyHMSM(0, 0, 0, 10);
 	}
 
 }
@@ -308,6 +310,9 @@ void AppStartTast(void *pdata)
                 &SPEED_TASK_STK[SPEED_STK_SIZE -1],
                 SPEED_TASK_PRIO); //建立  speed 任务
 	 
+	  OSTaskCreate(CTRL_TASK,(void *)0,
+                &CTRL_TASK_STK[CTRL_STK_SIZE -1],
+                CTRL_TASK_PRIO); //建立  speed 任务
 	
 	
 	
