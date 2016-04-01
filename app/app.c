@@ -35,6 +35,8 @@ OS_EVENT *msg_key;				  //按键邮箱块指针
 //全局变量 
 int LEFT = 0;   //左线圈的值
 int RIGHT = 0;  //右线圈的值
+int DOWN_LEFT = 0;
+int DOWN_RIGHT = 0;
 int ENCODE = 0; //编码器的值
 
 
@@ -202,18 +204,24 @@ void DMA_COUNT_TAST(void *pdata)
 	{
 		LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH2);
 		RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH0);
+		DOWN_RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH3);
+		DOWN_LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH4);
+		
 		
 		
 	
 		DMA_CancelTransfer();
 		DMA_SetMajorLoopCounter(HW_DMA_CH0, DMA_CITER_ELINKNO_CITER_MASK);
 		DMA_SetMajorLoopCounter(HW_DMA_CH2, DMA_CITER_ELINKNO_CITER_MASK);
+		DMA_SetMajorLoopCounter(HW_DMA_CH3, DMA_CITER_ELINKNO_CITER_MASK);
+	    DMA_SetMajorLoopCounter(HW_DMA_CH4, DMA_CITER_ELINKNO_CITER_MASK);
 	
 		
 		/* 开始下一次传输 */
 		DMA_EnableRequest(HW_DMA_CH0);
 		DMA_EnableRequest(HW_DMA_CH2);
-		
+		DMA_EnableRequest(HW_DMA_CH3);
+		DMA_EnableRequest(HW_DMA_CH4);
 		
 		OSTimeDlyHMSM(0, 0, 0, 10);
 		
@@ -386,7 +394,7 @@ void dmaInit(void)
 	DMA_PulseCountInit(HW_DMA_CH0, HW_GPIOB, 0);
 	DMA_PulseCountInit(HW_DMA_CH2, HW_GPIOC, 6);
 	DMA_PulseCountInit(HW_DMA_CH1, HW_GPIOA, 6);
-	DMA_PulseCountInit(HW_DMA_CH3, HW_GPIOD, 1);
+	DMA_PulseCountInit(HW_DMA_CH3, HW_GPIOD, 11);
 	DMA_PulseCountInit(HW_DMA_CH4, HW_GPIOE, 1);
 
 

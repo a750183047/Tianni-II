@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\mk60d10\flash\templete.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\mk60d10\flash\templete.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Fri Apr 01 18:30:54 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Fri Apr 01 19:11:35 2016
 <BR><P>
 <H3>Maximum Stack Usage =        584 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -594,7 +594,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.text)
 </UL>
-<P><STRONG><a name="[9f]"></a>DMA_COUNT_TAST</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, app.o(.text))
+<P><STRONG><a name="[9f]"></a>DMA_COUNT_TAST</STRONG> (Thumb, 150 bytes, Stack size 0 bytes, app.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48 + Unknown Stack Size
 <LI>Call Chain = DMA_COUNT_TAST &rArr; OSTimeDlyHMSM &rArr; OSTimeDly &rArr; OS_Sched
 </UL>
@@ -902,7 +902,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ui.o(.data)
 </UL>
-<P><STRONG><a name="[8]"></a>Read_UI</STRONG> (Thumb, 680 bytes, Stack size 104 bytes, ui.o(.text))
+<P><STRONG><a name="[8]"></a>Read_UI</STRONG> (Thumb, 692 bytes, Stack size 104 bytes, ui.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304 + Unknown Stack Size
 <LI>Call Chain = Read_UI &rArr; LCD_Write_Number &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -920,7 +920,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_UI
 </UL>
 
-<P><STRONG><a name="[6]"></a>Set_UI</STRONG> (Thumb, 2432 bytes, Stack size 384 bytes, ui.o(.text))
+<P><STRONG><a name="[6]"></a>Set_UI</STRONG> (Thumb, 2440 bytes, Stack size 384 bytes, ui.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 584 + Unknown Stack Size
 <LI>Call Chain = Set_UI &rArr; LCD_Write_Number &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1366,11 +1366,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[10c]"></a>FTM_QD_QuickInit</STRONG> (Thumb, 376 bytes, Stack size 32 bytes, ftm.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
+<BR><BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinOpenDrainConfig
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinPullConfig
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinMuxConfig
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
 </UL>
 
 <P><STRONG><a name="[217]"></a>FTM_QD_GetData</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ftm.o(.text), UNUSED)
@@ -1390,19 +1390,19 @@ Global Symbols
 <P><STRONG><a name="[b5]"></a>FTM_PWM_QuickInit</STRONG> (Thumb, 452 bytes, Stack size 56 bytes, ftm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = FTM_PWM_QuickInit &rArr; FTM_SetMode &rArr; FTM_DualChlConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetClock
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinMuxConfig
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_PWM_ChangeDuty
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;speedInit
 </UL>
 
 <P><STRONG><a name="[10e]"></a>FTM_IC_QuickInit</STRONG> (Thumb, 204 bytes, Stack size 24 bytes, ftm.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
+<BR><BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FTM_InitBasic
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinMuxConfig
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_SetMode
 </UL>
 
 <P><STRONG><a name="[219]"></a>FTM_IC_SetTriggerMode</STRONG> (Thumb, 194 bytes, Stack size 8 bytes, ftm.o(.text), UNUSED)
@@ -3405,8 +3405,8 @@ Local Symbols
 <P><STRONG><a name="[10a]"></a>FTM_SetMode</STRONG> (Thumb, 1140 bytes, Stack size 16 bytes, ftm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = FTM_SetMode &rArr; FTM_DualChlConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_DualChlConfig
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_PWM_InvertPolarity
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_PWM_InvertPolarity
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_DualChlConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_PWM_QuickInit
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_IC_QuickInit

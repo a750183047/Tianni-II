@@ -235,7 +235,8 @@ u8	Read_UI()
 		LCD_Write_Number(95,2, LEFT);
 		LCD_Write_Number(95,3, RIGHT);
 		LCD_Write_Number(95,4, ENCODE);
-		LCD_Write_Number(95,5, last_result);
+		LCD_Write_Number(95,5, DOWN_LEFT);
+		LCD_Write_Number(95,6,DOWN_RIGHT);
 			
 		if(key == 4)
 		{

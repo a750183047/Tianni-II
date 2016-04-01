@@ -51,6 +51,8 @@ extern OS_EVENT *msg_key;				  //按键邮箱块指针
 extern int LEFT ;   //左线圈的值
 extern int RIGHT;   //右线圈的值
 extern int ENCODE;  //编码器的值
+extern int DOWN_LEFT;
+extern int DOWN_RIGHT;
 
 
 
