@@ -1,13 +1,14 @@
 /*
- * 实验名称：uc/os-II 移植实验
- * 实验平台：渡鸦开发板
- * 板载芯片：MK60DN512ZVLQ10
- * 实验效果：
- *  				1.在串口上输出交替出现的LED1任务和LED2任务
- *					2.显示当前uc/os-II的版本
- * 					3.每秒显示CPU的使用率(%),大家可以在AppLED1Task中增加printf的个数来观察CPU占用率的情况
- * 修改记录：
- *					1.2015.10.31 FreeXc 将时钟节拍中断移至OSStart()函数之后，增加了版本显示以及CPU占用率的显示
+如果工程出现编译错误 请在 KEIl安装路径下 找到 stdint.h 并将下列代码添加到其中
+
+
+typedef 	unsigned 	char		u8;	 
+typedef 	unsigned 	short int	u16;
+typedef 	unsigned 	int	        u32;
+typedef 	char					s8;	 
+typedef 	short int				s16;
+typedef 	long  int				s32;
+
  */
 
 #include "gpio.h"

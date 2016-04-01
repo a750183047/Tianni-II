@@ -82,6 +82,7 @@
 #define HW_DMA_CH1    (0x01)  
 #define HW_DMA_CH2    (0x02)  
 #define HW_DMA_CH3    (0x03)  
+#define HW_DMA_CH4    (0x04)
 
 /**
  * \enum DMA_TriggerSource_Type

@@ -10,6 +10,10 @@ extern u32 now_10ms;
 extern PID speedPid;
 extern PID stree_pid;
 
+//上一次的转角方向
+
+int last_result = 0;
+
 /***
 2016-3-11
 新PID测试函数
@@ -126,42 +130,72 @@ void streePID(int nowValue)
 {
 	
 
-      float stree_p,stree_i,stree_d;
+    float stree_p,stree_i,stree_d;
 	
-      int pid_count = 0,pid_errsum = 0;
+    int pid_count = 0,pid_errsum = 0;
+	 
 	
-      stree_p = stree_pid.p;
 	
-      stree_i = stree_pid.i;
+    stree_p = stree_pid.p;
 	
-      stree_d = stree_pid.d;
+    stree_i = stree_pid.i;
 	
-      stree_pid.error[1] = nowValue - 180;
+    stree_d = stree_pid.d;
 	
-      pid_errsum +=  stree_pid.error[1] * stree_i;
+	if(LEFT<2835&&RIGHT<2655)
+	{
+		if(last_result == 1)
+		{
+			stree_pid.result = DUTY_MAX;
+		}else if(last_result == 2)
+		{
+			stree_pid.result = DUTY_MIN;
+		}
 	
-      stree_pid.result =(int) (stree_p * stree_pid.error[1]);
+	}else
 	
-      stree_pid.result += pid_errsum;
+	{
 	
-      stree_pid.result += stree_d * (stree_pid.error[1] - stree_pid.error[0]);
-	
-      pid_count ++;
-	
-      stree_pid.error[0] = stree_pid.error[1];
-	
-	  if(stree_pid.result > DUTY_MAX)
-	  {
-	  
-		stree_pid.result = DUTY_MAX;
-	  
-	  }
-	  if(stree_pid.result < DUTY_MIN)
-	  {
-	  
-		stree_pid.result = DUTY_MIN;
+		stree_pid.error[1] = nowValue - 180;
+		
+		pid_errsum +=  stree_pid.error[1] * stree_i;
+		
+		stree_pid.result =(int) (stree_p * stree_pid.error[1]);
+		
+		stree_pid.result += pid_errsum;
+		
+		stree_pid.result += stree_d * (stree_pid.error[1] - stree_pid.error[0]);
+		
+		pid_count ++;
+		
+		stree_pid.error[0] = stree_pid.error[1];
+		
+		if(stree_pid.result>0)
+		{
+		  last_result = 1;
+		}
+		if(stree_pid.result<0)
+		{
+		  last_result = 2;
+		}
+		
+	   if(stree_pid.result > DUTY_MAX)
+	   {
 		  
-	  }
+		  stree_pid.result = DUTY_MAX;
+		 
+		  
+	   }
+	   if(stree_pid.result < DUTY_MIN)
+	   {
+		  
+			stree_pid.result = DUTY_MIN;
+		
+	   }
+	   
+	  
+   }
+	
     
 }
 

@@ -4,6 +4,7 @@
 #include "app.h"
 #include "ftm.h"
 #include "FlashUI.h"
+#include "Ctrl.h"
 
 
 u16 adc_max[8]={0,0,0,0,0,0,0,0};
@@ -121,6 +122,7 @@ u8 Run_UI()
 	OLED_P6x8Str(0,1,S1);
     OLED_P6x8Str(0,2,SS);
     LCD_Write_Number(95,0, 0);
+	LCD_Write_Number(95,5, last_result);
 	
 	
 	 while(1)
@@ -233,7 +235,7 @@ u8	Read_UI()
 		LCD_Write_Number(95,2, LEFT);
 		LCD_Write_Number(95,3, RIGHT);
 		LCD_Write_Number(95,4, ENCODE);
-//		LCD_Write_Number(95,5, ChlValue[1]);
+		LCD_Write_Number(95,5, last_result);
 			
 		if(key == 4)
 		{

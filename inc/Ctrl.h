@@ -22,6 +22,8 @@
 #define  DUTY_MAX        170
 #define  DUTY_MIN        -170 
 
+extern int last_result;
+
 
 void readencode(void);
 void  ctrls(void);
