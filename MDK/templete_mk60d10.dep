@@ -38,7 +38,7 @@ I (..\Libraries\drivers\K\inc\dma.h)(0x565EF718)
 I (..\inc\UI.h)(0x56FBBB12)
 I (..\Libraries\drivers\K\inc\ftm.h)(0x565EF718)
 I (..\inc\FlashUI.h)(0x56FB6466)
-I (..\inc\Ctrl.h)(0x56FD1F3A)
+I (..\inc\Ctrl.h)(0x56FE2044)
 F (..\app\app.c)(0x56FD20E6)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\app.o --omf_browse .\mk60d10\flash\app.crf --depend .\mk60d10\flash\app.d)
 I (..\app\app.h)(0x56FD20E6)
 I (..\Libraries\utilities\uCOSII\config\includes.h)(0x56FA5427)
@@ -68,7 +68,7 @@ I (..\Libraries\drivers\K\inc\dma.h)(0x565EF718)
 I (..\inc\UI.h)(0x56FBBB12)
 I (..\Libraries\drivers\K\inc\ftm.h)(0x565EF718)
 I (..\inc\FlashUI.h)(0x56FB6466)
-I (..\inc\Ctrl.h)(0x56FD1F3A)
+I (..\inc\Ctrl.h)(0x56FE2044)
 F (..\src\OLED.c)(0x56E16969)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\oled.o --omf_browse .\mk60d10\flash\oled.crf --depend .\mk60d10\flash\oled.d)
 I (..\Libraries\drivers\K\inc\common.h)(0x565EF718)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FD1C96)
@@ -113,7 +113,7 @@ I (..\Libraries\utilities\uCOSII\core\uCOS_II.H)(0x565EF718)
 I (..\Libraries\utilities\uCOSII\config\os_cfg.h)(0x565EF718)
 I (..\Libraries\utilities\uCOSII\port\os_cpu.h)(0x565EF718)
 I (..\Libraries\drivers\K\inc\gpio.h)(0x56D96774)
-F (..\src\UI.c)(0x56FBBB12)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\ui.o --omf_browse .\mk60d10\flash\ui.crf --depend .\mk60d10\flash\ui.d)
+F (..\src\UI.c)(0x56FE2148)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\ui.o --omf_browse .\mk60d10\flash\ui.crf --depend .\mk60d10\flash\ui.d)
 I (..\Libraries\drivers\K\inc\common.h)(0x565EF718)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FD1C96)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
@@ -142,7 +142,7 @@ I (..\Libraries\drivers\K\inc\gpio.h)(0x56D96774)
 I (..\Libraries\drivers\K\inc\dma.h)(0x565EF718)
 I (..\Libraries\drivers\K\inc\ftm.h)(0x565EF718)
 I (..\inc\FlashUI.h)(0x56FB6466)
-I (..\inc\Ctrl.h)(0x56FD1F3A)
+I (..\inc\Ctrl.h)(0x56FE2044)
 F (..\src\FlashUI.c)(0x56FB637B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\flashui.o --omf_browse .\mk60d10\flash\flashui.crf --depend .\mk60d10\flash\flashui.d)
 I (..\Libraries\utilities\uCOSII\config\includes.h)(0x56FA5427)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53463A44)
@@ -156,7 +156,7 @@ I (..\Libraries\utilities\uCOSII\port\os_cpu.h)(0x565EF718)
 I (..\inc\FlashUI.h)(0x56FB6466)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FD1C96)
 I (..\Libraries\drivers\K\inc\flash.h)(0x565EF718)
-F (..\src\Ctrl.c)(0x56FD21A2)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\ctrl.o --omf_browse .\mk60d10\flash\ctrl.crf --depend .\mk60d10\flash\ctrl.d)
+F (..\src\Ctrl.c)(0x56FE227B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\ctrl.o --omf_browse .\mk60d10\flash\ctrl.crf --depend .\mk60d10\flash\ctrl.d)
 I (..\Libraries\utilities\uCOSII\config\includes.h)(0x56FA5427)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53463A44)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
@@ -185,7 +185,7 @@ I (..\inc\KEY.h)(0x56FB7533)
 I (..\Libraries\drivers\K\inc\dma.h)(0x565EF718)
 I (..\inc\UI.h)(0x56FBBB12)
 I (..\Libraries\drivers\K\inc\ftm.h)(0x565EF718)
-I (..\inc\Ctrl.h)(0x56FD1F3A)
+I (..\inc\Ctrl.h)(0x56FE2044)
 F (..\Libraries\drivers\K\src\gpio.c)(0x56D96774)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork -I..\Libraries\startup\CoreSupport -I..\Libraries\startup\DeviceSupport -I..\Libraries\drivers\K\inc -I..\Libraries\utilities\inc -I..\Libraries\devices\inc -I..\src -I..\Libraries\znfat -I..\Libraries\emWin\Include -I..\Libraries\emWin\Sample\LCD_X -I..\Libraries\utilities\uCOSII\config -I..\Libraries\utilities\uCOSII\core -I..\Libraries\utilities\uCOSII\port -I..\inc -I..\app --c99-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I Device\Include-DMK60D10 -DRAVEN -DDEBUG-o .\mk60d10\flash\gpio.o --omf_browse .\mk60d10\flash\gpio.crf --depend .\mk60d10\flash\gpio.d)
 I (..\Libraries\drivers\K\inc\common.h)(0x565EF718)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FD1C96)

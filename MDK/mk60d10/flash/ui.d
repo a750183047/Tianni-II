@@ -28,3 +28,4 @@
 .\mk60d10\flash\ui.o: ..\Libraries\drivers\K\inc\ftm.h
 .\mk60d10\flash\ui.o: ..\inc\FlashUI.h
 .\mk60d10\flash\ui.o: ..\inc\Ctrl.h
+.\mk60d10\flash\ui.o: ..\inc\Ctrl.h
