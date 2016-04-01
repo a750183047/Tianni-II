@@ -387,7 +387,7 @@ void dmaInit(void)
 	DMA_PulseCountInit(HW_DMA_CH2, HW_GPIOC, 6);
 	DMA_PulseCountInit(HW_DMA_CH1, HW_GPIOA, 6);
 	DMA_PulseCountInit(HW_DMA_CH3, HW_GPIOD, 1);
-	//DMA_PulseCountInit(HW_DMA_CH4, HW_GPIOE, 1);
+	DMA_PulseCountInit(HW_DMA_CH4, HW_GPIOE, 1);
 
 
 }
