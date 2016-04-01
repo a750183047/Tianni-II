@@ -204,8 +204,8 @@ void DMA_COUNT_TAST(void *pdata)
 	{
 		LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH2);
 		RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH0);
-		DOWN_RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH3);
-		DOWN_LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH4);
+		DOWN_LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH3);
+		DOWN_RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH4);
 		
 		
 		
@@ -271,7 +271,7 @@ void CTRL_TASK(void * pdata)
 	pdata = pdata;
 	while(1)
 	{
-		if(FLAG_RUN)
+		//if(FLAG_RUN)
 		{
 			ctrls();	
 		

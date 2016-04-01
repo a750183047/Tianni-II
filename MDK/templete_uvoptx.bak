@@ -172,7 +172,7 @@
           <Type>0</Type>
           <LineNumber>133</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>2098</Address>
+          <Address>2080</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -181,14 +181,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\app\app.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../app/app.c\133</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
           <LineNumber>109</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>2046</Address>
+          <Address>2028</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -197,14 +197,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\app\app.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../app/app.c\109</Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
           <LineNumber>23</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>4160</Address>
+          <Address>4564</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -213,14 +213,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\src\KEY.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../src/KEY.c\23</Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
           <LineNumber>26</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>4174</Address>
+          <Address>4582</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -229,14 +229,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\src\KEY.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../src/KEY.c\26</Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
           <LineNumber>19</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>4144</Address>
+          <Address>4548</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -245,14 +245,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\src\KEY.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../src/KEY.c\19</Expression>
         </Bp>
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
           <LineNumber>21</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>4148</Address>
+          <Address>4552</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -261,7 +261,23 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\src\KEY.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\templete\../src/KEY.c\21</Expression>
+        </Bp>
+        <Bp>
+          <Number>6</Number>
+          <Type>0</Type>
+          <LineNumber>176</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>9828</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>E:\路脡脣录驴篓露没碌脠\code\2016-3-29\src\Ctrl.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\templete\../src/Ctrl.c\176</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

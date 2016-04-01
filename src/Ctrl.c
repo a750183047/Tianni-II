@@ -133,8 +133,9 @@ void streePID(int nowValue)
     float stree_p,stree_i,stree_d;
 	
     int pid_count = 0,pid_errsum = 0;
-	 
 	
+	int CZ;
+	 
 	
     stree_p = stree_pid.p;
 	
@@ -142,17 +143,20 @@ void streePID(int nowValue)
 	
     stree_d = stree_pid.d;
 	
-	if(LEFT<2835&&RIGHT<2655)
-	{
-		if(last_result == 1)
-		{
-			stree_pid.result = DUTY_MAX;
-		}else if(last_result == 2)
-		{
-			stree_pid.result = DUTY_MIN;
-		}
-	
-	}else
+		
+//		if(DOWN_LEFT>2790||DOWN_RIGHT>2740)
+//	{
+//			if(last_result == 1)
+//			{
+//				stree_pid.result = DUTY_MAX;
+//			}else if(last_result == 2)
+//			{
+//				stree_pid.result = DUTY_MIN;
+//				
+//			}
+//	}
+//	
+//	 else
 	
 	{
 	
@@ -189,7 +193,7 @@ void streePID(int nowValue)
 	   if(stree_pid.result < DUTY_MIN)
 	   {
 		  
-			stree_pid.result = DUTY_MIN;
+		  stree_pid.result = DUTY_MIN;
 		
 	   }
 	   
