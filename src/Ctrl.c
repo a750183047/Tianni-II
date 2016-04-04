@@ -143,21 +143,7 @@ void streePID(int nowValue)
 	
     stree_d = stree_pid.d;
 	
-		
-//		if(DOWN_LEFT>2790||DOWN_RIGHT>2740)
-//	{
-//			if(last_result == 1)
-//			{
-//				stree_pid.result = DUTY_MAX;
-//			}else if(last_result == 2)
-//			{
-//				stree_pid.result = DUTY_MIN;
-//				
-//			}
-//	}
-//	
-//	 else
-	
+
 	{
 	
 		stree_pid.error[1] = nowValue - 180;
