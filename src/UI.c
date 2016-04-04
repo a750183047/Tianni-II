@@ -212,8 +212,9 @@ u8	Read_UI()
 	u8 S2[]  =  "    Left = ";
     u8 S3[]  =  "    Right = ";
 	u8 S4[]  =  "    Encoder = ";
-	u8 S5[]  =  "    Down_left = ";
-	u8 S6[]  =  "    Down_right = ";
+	u8 S5[]  =  "    left_cha = ";
+	u8 S6[]  =  "    right_cha = ";
+	u8 S7[]  =  "    DOWN_LEFT = ";
 	
 	u8 key = 0;
     u8 err;
@@ -227,6 +228,7 @@ u8	Read_UI()
     OLED_P6x8Str(0,4,S4);
     OLED_P6x8Str(0,5,S5);
 	OLED_P6x8Str(0,6,S6);
+	OLED_P6x8Str(0,7,S7);
     LCD_Write_Number(95,0, 0);
                                    
 	while(1)
@@ -237,8 +239,11 @@ u8	Read_UI()
 		LCD_Write_Number(95,2, LEFT);
 		LCD_Write_Number(95,3, RIGHT);
 		LCD_Write_Number(95,4, ENCODE);
-		LCD_Write_Number(95,5, DOWN_LEFT);
-		LCD_Write_Number(95,6, DOWN_RIGHT);
+		LCD_Write_Number(95,5, LEFT-DOWN_LEFT-188+61);
+		LCD_Write_Number(95,6, RIGHT-DOWN_LEFT-134+61);
+		LCD_Write_Number(95,7, DOWN_LEFT);
+;
+		
 			
 		if(key == 4)
 		{

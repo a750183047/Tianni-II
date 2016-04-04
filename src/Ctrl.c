@@ -135,7 +135,13 @@ void streePID(int nowValue)
     int pid_count = 0,pid_errsum = 0;
 	
 	int CZ;
-	 
+	
+	//ÄâºÏ²ÎÊý
+	
+		float p1 =  0.1614 ;
+		float p2 =  -8.265;
+		float x= 0;
+		 
 	
     stree_p = stree_pid.p;
 	
@@ -143,10 +149,30 @@ void streePID(int nowValue)
 	
     stree_d = stree_pid.d;
 	
+	
+	
+	if(DOWN_LEFT<2650)
+	{
+		if(last_result == 1)	
+		{
+			stree_pid.result = DUTY_MAX;
+		}
+		if(last_result ==2)
+		{
+		stree_pid.result = DUTY_MIN;
+		}
+		
+		
+		
+	}else
+	
 
 	{
+		
+		x = p1*nowValue+p2;
+		stree_pid.error[1] = x;
 	
-		stree_pid.error[1] = nowValue - 180;
+		//stree_pid.error[1] = nowValue - 55;
 		
 		pid_errsum +=  stree_pid.error[1] * stree_i;
 		
