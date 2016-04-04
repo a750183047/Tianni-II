@@ -436,10 +436,12 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M4 --apcs=interwork --depend=.\mk60d1
-0\flash\os_cpu_a_keil.d -o.\mk60d10\flash\os_cpu_a_keil.o -ID:\Keil_v5\ARM\RV31
-\INC -ID:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include -IDevice\Include --lis
-t=.\os_cpu_a_keil.lst ..\Libraries\utilities\uCOSII\port\os_cpu_a_keil.asm
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\mk60d10\flash\os_cpu_a_keil.d -o.\mk60d10\flash\os_cpu_a_keil.o 
+-IE:\GIT\三路最新\Tianni-II\MDK\RTE -ID:\MDK\MDK5\ARM\PACK\Keil\Kinetis_K60_DFP
+\1.4.0\Device\Include -ID:\MDK\MDK5\ARM\CMSIS\Include --predefine="__UVISION_VE
+RSION SETA 514" --predefine="MK60DN512xxx10 SETA 1" --list=.\os_cpu_a_keil.lst 
+..\Libraries\utilities\uCOSII\port\os_cpu_a_keil.asm
 
 
 
@@ -646,4 +648,4 @@ Symbol: OS_CPU_ExceptStkBase
       At line 130 in file ..\Libraries\utilities\uCOSII\port\os_cpu_a_keil.asm
 Comment: OS_CPU_ExceptStkBase used once
 8 symbols
-353 symbols in table
+355 symbols in table

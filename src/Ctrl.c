@@ -151,7 +151,7 @@ void streePID(int nowValue)
 	
 	
 	
-	if(DOWN_LEFT<2650)
+	if(DOWN_LEFT<2650||DOWN_RIGHT<2810)
 	{
 		if(last_result == 1)	
 		{

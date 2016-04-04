@@ -213,7 +213,7 @@ u8	Read_UI()
     u8 S3[]  =  "    Right = ";
 	u8 S4[]  =  "    Encoder = ";
 	u8 S5[]  =  "    left_cha = ";
-	u8 S6[]  =  "    right_cha = ";
+	u8 S6[]  =  "    DOWN_RIGHT = ";
 	u8 S7[]  =  "    DOWN_LEFT = ";
 	
 	u8 key = 0;
@@ -240,7 +240,7 @@ u8	Read_UI()
 		LCD_Write_Number(95,3, RIGHT);
 		LCD_Write_Number(95,4, ENCODE);
 		LCD_Write_Number(95,5, LEFT-DOWN_LEFT-188+61);
-		LCD_Write_Number(95,6, RIGHT-DOWN_LEFT-134+61);
+		LCD_Write_Number(95,6, DOWN_RIGHT);
 		LCD_Write_Number(95,7, DOWN_LEFT);
 ;
 		
