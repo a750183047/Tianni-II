@@ -1,7 +1,7 @@
 #ifndef _KEY_H
 #define _KEY_H
 #include "common.h"
-
+#include "includes.h"
  
 #define KEY_U  PAin(13)
 #define KEY_D  PAin(12)

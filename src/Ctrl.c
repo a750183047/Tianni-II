@@ -228,7 +228,25 @@ void  ctrls(void)
 
 }
 
-
+void min_max(void)
+{
+	//取最大值
+	if(LEFT>LMAX)        LMAX=LEFT;
+	if(RIGHT>RMAX)       RMAX=RIGHT;
+	if(DOWN_LEFT>DLMAX)  DLMAX=DOWN_LEFT;
+	if(DOWN_RIGHT>DRMAX) DRMAX=DOWN_RIGHT;
+	
+	//取最小值
+	if(LMIN==0)             LMIN=LEFT; 
+	if(RMIN==0)             RMIN=RIGHT;
+	if(DLMIN==0)            DLMIN=DOWN_LEFT;
+	if(DRMIN==0)            DRMIN=DOWN_RIGHT;
+	
+	if(LEFT<=LMIN)          LMIN=LEFT;   
+	if(RIGHT<=RMIN)         RMIN=RIGHT;
+	if(DOWN_LEFT<=DLMIN)    DLMIN=DOWN_LEFT;
+	if(DOWN_RIGHT<=DRMIN)   DRMIN=DOWN_RIGHT;
+}
 
 
 

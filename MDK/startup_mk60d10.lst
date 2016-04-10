@@ -1147,12 +1147,11 @@ ARM Macro Assembler    Page 18
               00001000 
               00000400 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
-ork --depend=.\mk60d10\flash\startup_mk60d10.d -o.\mk60d10\flash\startup_mk60d1
-0.o -IE:\GIT\三路最新\Tianni-II\MDK\RTE -ID:\MDK\MDK5\ARM\PACK\Keil\Kinetis_K60
-_DFP\1.4.0\Device\Include -ID:\MDK\MDK5\ARM\CMSIS\Include --predefine="__UVISIO
-N_VERSION SETA 514" --predefine="MK60DN512xxx10 SETA 1" --list=.\startup_mk60d1
-0.lst ..\Libraries\startup\DeviceSupport\MDK-ARM\startup_MK60D10.s
+Command Line: --debug --xref --cpu=Cortex-M4 --apcs=interwork --depend=.\mk60d1
+0\flash\startup_mk60d10.d -o.\mk60d10\flash\startup_mk60d10.o -ID:\资料\小车\Ti
+anni-II\MDK\RTE -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_K60_DFP\1.4.0\Device\Include
+ -IC:\Keil_v5\ARM\CMSIS\Include --predefine="MK60DN512xxx10 SETA 1" --list=.\st
+artup_mk60d10.lst ..\Libraries\startup\DeviceSupport\MDK-ARM\startup_MK60D10.s
 
 
 
@@ -3467,4 +3466,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-497 symbols in table
+496 symbols in table

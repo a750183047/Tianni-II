@@ -53,7 +53,15 @@ extern int RIGHT;   //右线圈的值
 extern int ENCODE;  //编码器的值
 extern int DOWN_LEFT;
 extern int DOWN_RIGHT;
-
+extern int LMAX;   //左线圈最大最小
+extern int LMIN;   
+extern int RMAX;   //右线圈
+extern int RMIN;  
+extern int DLMAX;  
+extern int DLMIN;
+extern int DRMAX;
+extern int DRMIN;
+extern int min[5];
 
 
 void AppLED1Task(void *pdata);

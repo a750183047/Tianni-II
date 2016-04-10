@@ -10,6 +10,7 @@
 #include "flash.h"
 #include "common.h"
 #include "FlashUI.h"
+#include "includes.h"
 
 /* flash commands */
 #define RD1BLK    0x00  /* read 1 block */

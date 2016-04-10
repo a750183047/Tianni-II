@@ -37,9 +37,16 @@ int LEFT = 0;   //左线圈的值
 int RIGHT = 0;  //右线圈的值
 int DOWN_LEFT = 0;
 int DOWN_RIGHT = 0;
-int ENCODE = 0; //编码器的值
-
-
+int ENCODE; //编码器的值
+int LMAX;   //左线圈最大最小
+int LMIN;   
+int RMAX;   //右线圈
+int RMIN;  
+int DLMAX;  
+int DLMIN;
+int DRMAX;
+int DRMIN;
+int min[5];
 
 /***************
 

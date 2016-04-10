@@ -27,7 +27,7 @@ extern int last_result;
 
 void readencode(void);
 void  ctrls(void);
-
+void min_max(void);
 
 void speedCtrl(void); //ËÙ¶È¿ØÖÆ
 

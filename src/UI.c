@@ -108,7 +108,7 @@ u8 Menu_UI()
 
 u8 Run_UI()
 {
-    
+	
     u8 S0[]="Launching  Bett:";
 	u8 S1[]="---------------------";
 	u8 SR[]="RUNING";
@@ -155,27 +155,134 @@ u8 Run_UI()
 
 }
 
+#define SetOptionsNum 8 //ÉèÖÃÏî¹öÂÖ´óÐ
 u8 State1_UI()
 {
-   
-    u8 S0[]="Car State  Bett:";
-    u8 S1[]="---------------------";
-	u8 S2[]="MID                  ";
-	u8 S3[]="F_L_C      F_R_C     ";
-	u8 S4[]="F_L_V      F_R_V     ";
-	u8 S5[]="S_L        S_R       ";
-	u8 key = 0;
-    u8 err;
-    OLED_CLS();//ÇåÆÁ
-    OLED_P6x8Str(0,0,S0);
-    OLED_P6x8Str(0,1,S1);
-    OLED_P6x8Str(0,2,S2);
-    OLED_P6x8Str(0,3,S3);
-    OLED_P6x8Str(0,4,S4);
-    OLED_P6x8Str(0,5,S5);
-    LCD_Write_Number(95,0, 0);
 	
-	return 0;
+  static u8 SetArrow = 2;
+	static u8 Page = 0;
+	static u8 Item = 1;
+	u8 key = 0;
+  u8 err;
+  u8 i,n;
+	
+  u8 S0[]  =  "Reading:";
+	u8 S1[]  =  "---------------------";
+	u8 SS[SetOptionsNum][19]={
+		"      LMAX = ",
+		"      LMIN = ",
+		"      RMAX = ",
+		"      RMIN = ",
+		"      DLMAX = ",
+		"      DLMIN = ",
+		"      DRMAX = ",
+		"      DRMIN = ",
+	};
+
+	
+	
+	float dnum[9];
+	
+  u8 AR[]="->";//ÏÔÊ¾¼ýÍ·
+	u8 AC[]="  ";//Çå³ý¼ýÍ·
+	
+	OLED_CLS();//ÇåÆÁ
+  OLED_P6x8Str(0,0,S0);
+  OLED_P6x8Str(0,1,S1);
+    
+	u8 SaveSetArrow = 2;
+	u16 ArrowState = 0;//¼ýÍ·×´Ì¬±ê¼Ç0:Õý³£Ñ¡ÔñÏî 1:ÊýÖµÐÞ¸Ä
+  u8 text[5];
+	while(1)
+	{
+			min_max();    //×î´ó×îÐ¡Öµ
+		switch(key)
+		{
+			case 0:break;
+
+			case 1://ÉÏ¼ü
+			{
+				if(ArrowState== 0)
+				{
+					SetArrow--;
+					Item--;
+					if(Item < 1) Item = SetOptionsNum;
+					if(SetArrow<2)
+					{
+						if(Page == 0)
+						{
+							Page = 2;
+							SetArrow = 7;
+						}
+						else
+						{
+							SetArrow = 2;
+              Page--;
+						}
+					}
+				}
+			}
+				break;
+
+			case 2://ÏÂ¼ü
+			{
+				if(ArrowState== 0)
+				{
+					SetArrow++;
+					Item++;
+					if(Item > SetOptionsNum) Item = 1;
+					if(SetArrow>7)
+					{
+						if(Page == 2)
+						{
+							Page = 0;
+							SetArrow = 2;
+						}
+						else
+						{
+							SetArrow = 7;
+                       	 	Page++;
+						}
+					}
+				}
+			}
+				break;
+		}
+			
+		if(key == 4)
+		{
+
+			OLED_CLS();//ÇåÆÁ
+					
+			return Menu_UI_ID;
+					
+		}
+		key=(u8)OSMboxPend(msg_key,5,&err);//°´¼üÓÊÏä
+	
+	for(i=2;i<8;i++)
+		 {
+			OLED_P6x8Str(0,i,SS[Page+i-2]);//´òÓ¡ÏÔÊ¾
+		 }
+		if(ArrowState == 0)//¼ýÍ·ÎªÐÞ¸ÄÊýÖµ×´Ì¬
+		{
+			OLED_P6x8Str(24,SaveSetArrow,AC);
+			OLED_P6x8Str(24,SetArrow,AR);
+			SaveSetArrow = SetArrow;
+		}
+		
+			 dnum[0]=LMAX;         //LMAX
+			 dnum[1]=LMIN;         //LMIN
+			 dnum[2]=RMAX;         //RMAX
+			 dnum[3]=RMIN;         //RMIN
+			 dnum[4]=DLMAX;         //DLMAX
+		   dnum[5]=DLMIN;        //DLMIN
+		   dnum[6]=DRMAX;        //DRMAX
+		   dnum[7]=DRMIN;        //DRMIN
+		 for(i=2;i<8;i++)
+		 {
+			LCD_Write_Number(95,i, dnum[Page+i-2]);
+		 }
+	 }
 
 }
 
@@ -204,46 +311,105 @@ u8 Record_UI()
 	return 0;
 		
 	}
-//#define SetOptionsNum 14 //ÉèÖÃÏî¹öÂÖ´óÐ¡
+#define SetOptionsNum 14 //ÉèÖÃÏî¹öÂÖ´óÐ¡
 u8	Read_UI()
 {
-    u8 S0[]  =  "Reading:";
-	u8 S1[]  =  "---------------------";
-	u8 S2[]  =  "    Left = ";
-    u8 S3[]  =  "    Right = ";
-	u8 S4[]  =  "    Encoder = ";
-	u8 S5[]  =  "    left_cha = ";
-	u8 S6[]  =  "    DOWN_RIGHT = ";
-	u8 S7[]  =  "    DOWN_LEFT = ";
-	
+	static u8 SetArrow = 2;
+	static u8 Page = 0;
+	static u8 Item = 1;
 	u8 key = 0;
-    u8 err;
+  u8 err;
+  u8 i,n;
+	
+  u8 S0[]  =  "Reading:";
+	u8 S1[]  =  "---------------------";
+	u8 SS[SetOptionsNum][19]={
+		"      Left = ",
+    "      Right = ",
+	  "      Enco = ",     //Encoder
+	  "      l_cha = ",    //left_cha
+	  "      D_RIGHT = ",
+	  "      D_LEFT = ",
+		"      LMAX = ",
+		"      LMIN = ",
+		"      RMAX = ",
+		"      RMIN = ",
+		"      DLMAX = ",
+		"      DLMIN = ",
+		"      DRMAX = ",
+		"      DRMIN = ",
+	};
 
-
+	
+	
+	float dnum[14];
+	
+  u8 AR[]="->";//ÏÔÊ¾¼ýÍ·
+	u8 AC[]="  ";//Çå³ý¼ýÍ·
+	
 	OLED_CLS();//ÇåÆÁ
-    OLED_P6x8Str(0,0,S0);
-    OLED_P6x8Str(0,1,S1);
-    OLED_P6x8Str(0,2,S2);
-    OLED_P6x8Str(0,3,S3);
-    OLED_P6x8Str(0,4,S4);
-    OLED_P6x8Str(0,5,S5);
-	OLED_P6x8Str(0,6,S6);
-	OLED_P6x8Str(0,7,S7);
-    LCD_Write_Number(95,0, 0);
-                                   
+  OLED_P6x8Str(0,0,S0);
+  OLED_P6x8Str(0,1,S1);
+	
+//  LCD_Write_Number(95,0, 0);
+    
+	u8 SaveSetArrow = 2;
+	u16 ArrowState = 0;//¼ýÍ·×´Ì¬±ê¼Ç0:Õý³£Ñ¡ÔñÏî 1:ÊýÖµÐÞ¸Ä
+  u8 text[5];
 	while(1)
 	{
-			
-		  
-			
-		LCD_Write_Number(95,2, LEFT);
-		LCD_Write_Number(95,3, RIGHT);
-		LCD_Write_Number(95,4, ENCODE);
-		LCD_Write_Number(95,5, LEFT-DOWN_LEFT-188+61);
-		LCD_Write_Number(95,6, DOWN_RIGHT);
-		LCD_Write_Number(95,7, DOWN_LEFT);
-;
-		
+		switch(key)
+		{
+			case 0:break;
+
+			case 1://ÉÏ¼ü
+			{
+				if(ArrowState== 0)
+				{
+					SetArrow--;
+					Item--;
+					if(Item < 1) Item = SetOptionsNum;
+					if(SetArrow<2)
+					{
+						if(Page == 0)
+						{
+							Page = 8;
+							SetArrow = 7;
+						}
+						else
+						{
+							SetArrow = 2;
+              Page--;
+						}
+					}
+				}
+			}
+				break;
+
+			case 2://ÏÂ¼ü
+			{
+				if(ArrowState== 0)
+				{
+					SetArrow++;
+					Item++;
+					if(Item > SetOptionsNum) Item = 1;
+					if(SetArrow>7)
+					{
+						if(Page == 8)
+						{
+							Page = 0;
+							SetArrow = 2;
+						}
+						else
+						{
+							SetArrow = 7;
+                       	 	Page++;
+						}
+					}
+				}
+			}
+				break;
+		}
 			
 		if(key == 4)
 		{
@@ -254,8 +420,37 @@ u8	Read_UI()
 					
 		}
 		key=(u8)OSMboxPend(msg_key,5,&err);//°´¼üÓÊÏä
+	
+	for(i=2;i<8;i++)
+		 {
+			OLED_P6x8Str(0,i,SS[Page+i-2]);//´òÓ¡ÏÔÊ¾
+		 }
+		if(ArrowState == 0)//¼ýÍ·ÎªÐÞ¸ÄÊýÖµ×´Ì¬
+		{
+			OLED_P6x8Str(24,SaveSetArrow,AC);
+			OLED_P6x8Str(24,SetArrow,AR);
+			SaveSetArrow = SetArrow;
+		}
 		
-	}
+			 dnum[0]=LEFT;
+		   dnum[1]=RIGHT;
+		   dnum[2]=ENCODE;
+		   dnum[3]=LEFT-DOWN_LEFT-188+61;
+			 dnum[4]=DOWN_LEFT;
+			 dnum[5]=DOWN_RIGHT;
+			 dnum[6]=LMAX;         //LMAX
+			 dnum[7]=LMIN;         //LMIN
+			 dnum[8]=RMAX;         //RMAX
+			 dnum[9]=RMIN;         //RMIN
+			 dnum[10]=DLMAX;         //DLMAX
+		   dnum[11]=DLMIN;        //DLMIN
+		   dnum[12]=DRMAX;        //DRMAX
+		   dnum[13]=DRMIN;        //DRMIN
+		 for(i=2;i<8;i++)
+		 {
+			LCD_Write_Number(95,i, dnum[Page+i-2]);
+		 }
+	 }
 		
 }
 		
@@ -265,7 +460,7 @@ u8 Set_UI()
 {
    
 
-    u8 S0[]  =  "Set Variable Bett:";
+  u8 S0[]  =  "Set Variable Bett:";
 	u8 S1[]  =  "---------------------";
 	u8 SS[SetOptionsNum][19]={
 		"      Speed_P:    ",
@@ -288,7 +483,7 @@ u8 Set_UI()
 	static u8 Page = 0;//Ò³Ãæ±ê¼ÇÎ»(0~6)
 	static u8 Item = 1;//ÏîÄ¿±ê¼ÇÎ»(1~SetOptionsNum)
 
-    u8 AR[]="->";//ÏÔÊ¾¼ýÍ·
+   u8 AR[]="->";//ÏÔÊ¾¼ýÍ·
 	u8 AM[]="- ";//Ñ¡ÖÐÄ£Ê½
 	u8 AC[]="  ";//Çå³ý¼ýÍ·
     u8 SaveSetArrow = 2;

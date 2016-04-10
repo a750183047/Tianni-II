@@ -3,6 +3,7 @@
 
 
 #include <stdint.h>
+#include <includes.h>
 
 #define     FLASH_SECTOR_SIZE       (2*1024)                //扇区大小 为 2k 字节
 #define     FLASH_SECTOR_NUM        (256)                   //扇区数

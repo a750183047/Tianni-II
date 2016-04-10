@@ -1,5 +1,5 @@
 .\mk60d10\flash\system_mk60d10.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.c
-.\mk60d10\flash\system_mk60d10.o: D:\MDK\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mk60d10\flash\system_mk60d10.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\mk60d10\flash\system_mk60d10.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
 .\mk60d10\flash\system_mk60d10.o: ..\Libraries\startup\CoreSupport\core_cm4.h
 .\mk60d10\flash\system_mk60d10.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
