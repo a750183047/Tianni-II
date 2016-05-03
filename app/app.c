@@ -214,14 +214,11 @@ void DMA_COUNT_TAST(void *pdata)
 		DOWN_LEFT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH3);
 		DOWN_RIGHT = DMA_CITER_ELINKNO_CITER_MASK - DMA_GetMajorLoopCount(HW_DMA_CH4);
 		
-		
-		
-	
 		DMA_CancelTransfer();
 		DMA_SetMajorLoopCounter(HW_DMA_CH0, DMA_CITER_ELINKNO_CITER_MASK);
 		DMA_SetMajorLoopCounter(HW_DMA_CH2, DMA_CITER_ELINKNO_CITER_MASK);
 		DMA_SetMajorLoopCounter(HW_DMA_CH3, DMA_CITER_ELINKNO_CITER_MASK);
-	    DMA_SetMajorLoopCounter(HW_DMA_CH4, DMA_CITER_ELINKNO_CITER_MASK);
+	  DMA_SetMajorLoopCounter(HW_DMA_CH4, DMA_CITER_ELINKNO_CITER_MASK);
 	
 		
 		/* 开始下一次传输 */
@@ -278,10 +275,8 @@ void CTRL_TASK(void * pdata)
 	pdata = pdata;
 	while(1)
 	{
-		//if(FLAG_RUN)
 		{
-			ctrls();	
-		
+			ctrls();			
 		}
 		OSTimeDlyHMSM(0, 0, 0, 10);
 	}
@@ -412,7 +407,7 @@ void speedInit()
 {
 	FTM_PWM_QuickInit(FTM0_CH3_PC04,kPWM_EdgeAligned,10000);
 	FTM_PWM_QuickInit(FTM0_CH2_PC03,kPWM_EdgeAligned,10000);
-    FTM_PWM_QuickInit(FTM1_CH1_PA09,kPWM_EdgeAligned,100);
+  FTM_PWM_QuickInit(FTM1_CH1_PA09,kPWM_EdgeAligned,100);
 	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH3, 0);
 	FTM_PWM_ChangeDuty(HW_FTM0, HW_FTM_CH2, 0);
 	FTM_PWM_ChangeDuty(HW_FTM1, HW_FTM_CH1, 1460);

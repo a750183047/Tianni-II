@@ -290,7 +290,7 @@ u8 Record_UI()
 {
     u8 S0[]  =  "         Plan:";
     u8 S1[]  =  "---------------------";
-	u8 S2[]  =  "    Plan_1 = ";
+		u8 S2[]  =  "    Plan_1 = ";
     u8 S3[]  =  "    Plan_2 = ";
     u8 S4[]  =  "    Plan_3 = ";
     u8 S5[]  =  "    Plan_4 = ";
@@ -435,7 +435,7 @@ u8	Read_UI()
 			 dnum[0]=LEFT;
 		   dnum[1]=RIGHT;
 		   dnum[2]=ENCODE;
-		   dnum[3]=LEFT-DOWN_LEFT-188+61;
+		   dnum[3]=LEFT-RIGHT;
 			 dnum[4]=DOWN_LEFT;
 			 dnum[5]=DOWN_RIGHT;
 			 dnum[6]=LMAX;         //LMAX
@@ -682,7 +682,7 @@ u8 Set_UI()
         //数值修改
 
         //数值嵌入
-        sprintf((char *)text,"%4d",(int)(speedPid.p*10));
+    sprintf((char *)text,"%4d",(int)(speedPid.p*10));
 		AddNumString(SS[0],text);
 		sprintf((char *)text,"%4d",(int)(speedPid.i*10));
 		AddNumString(SS[1],text);
@@ -696,15 +696,15 @@ u8 Set_UI()
 		AddNumString(SS[5],text);
 		sprintf((char *)text,"%4d",(int)(speedPid.goal));
 		AddNumString(SS[6],text);
-        sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_1*10));
+    sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_1*10));
 		AddNumString(SS[7],text);
-        sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_2*10));
+    sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_2*10));
 	 	AddNumString(SS[8],text);
-        sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_3*10));
+    sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_3*10));
 		AddNumString(SS[9],text);
-        sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_4*10));
+    sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_4*10));
 		AddNumString(SS[10],text);
-        sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_5*10));
+    sprintf((char *)text,"%4d",(int)(stree_vim_pid.Kp_5*10));
 		AddNumString(SS[11],text);
         //*****数值嵌入
 

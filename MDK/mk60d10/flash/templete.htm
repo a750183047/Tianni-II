@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\mk60d10\flash\templete.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\mk60d10\flash\templete.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050041: Last Updated: Sat Apr 09 21:15:52 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue May 03 20:57:08 2016
 <BR><P>
 <H3>Maximum Stack Usage =        600 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -908,7 +908,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ui.o(.data)
 </UL>
-<P><STRONG><a name="[8]"></a>Read_UI</STRONG> (Thumb, 558 bytes, Stack size 400 bytes, ui.o(.text))
+<P><STRONG><a name="[8]"></a>Read_UI</STRONG> (Thumb, 554 bytes, Stack size 400 bytes, ui.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 600 + Unknown Stack Size
 <LI>Call Chain = Read_UI &rArr; LCD_Write_Number &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -938,7 +938,6 @@ Global Symbols
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Write_Number
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_P6x8Str
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_CLS
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
@@ -947,6 +946,7 @@ Global Symbols
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ui.o(.data)
 </UL>
@@ -1017,8 +1017,7 @@ Global Symbols
 <P><STRONG><a name="[e8]"></a>PORT_PinMuxConfig</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PORT_PinMuxConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_QuickInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_QuickInit
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_QuickInit
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_PWM_QuickInit
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSI_QuickInit
@@ -1026,14 +1025,15 @@ Global Symbols
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_QuickInit
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_IC_QuickInit
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_QD_QuickInit
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_QuickInit
 </UL>
 
 <P><STRONG><a name="[e5]"></a>PORT_PinPullConfig</STRONG> (Thumb, 162 bytes, Stack size 8 bytes, gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PORT_PinPullConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_QuickInit
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FTM_QD_QuickInit
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_QuickInit
 </UL>
 
 <P><STRONG><a name="[e6]"></a>PORT_PinOpenDrainConfig</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, gpio.o(.text))
@@ -1338,10 +1338,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[104]"></a>ADC_QuickInit</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, adc.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ChlMuxConfig
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinPullConfig
+<BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinPullConfig
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_PinMuxConfig
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ChlMuxConfig
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
 </UL>
 
 <P><STRONG><a name="[107]"></a>ADC_StartConversion</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, adc.o(.text), UNUSED)

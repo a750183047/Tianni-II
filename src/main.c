@@ -27,8 +27,11 @@ typedef 	long  int				s32;
 int main(void)
 {
 		
+	
+	
 	allInit();
-    OSInit();  //OS初始化
+  OSInit();  //OS初始化
+	
 	
 	//创建初始任务
 	OSTaskCreate(AppStartTast,(void *)0,

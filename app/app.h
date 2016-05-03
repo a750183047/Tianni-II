@@ -53,6 +53,7 @@ extern int RIGHT;   //右线圈的值
 extern int ENCODE;  //编码器的值
 extern int DOWN_LEFT;
 extern int DOWN_RIGHT;
+extern int CHA;
 extern int LMAX;   //左线圈最大最小
 extern int LMIN;   
 extern int RMAX;   //右线圈
